@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IntelliLearn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--stylesheet-->
+
+    <link href="../../CSS/Style.css" rel="stylesheet" />
+    <link href="../../CSS/intellilearn1.css" rel="stylesheet" />
+    <link href="../../CSS/sticky-footer-navbar.css" rel="stylesheet" />
+    <!--Syntax Highlighter-->
+    <!-- Include required JS files -->
+    <script src="../../Syntax%20Highlighter/Scripts/shCore.js"></script>
+
+    <!--
+        At least one brush, here we choose JS. You need to include a brush for every
+        language you want to highlight
+    -->
+    <script src="../../Syntax%20Highlighter/Scripts/shBrushCss.js"></script>
+    <!--<script src="../../Syntax%20Highlighter/Scripts/shBrushCSharp.js"></script>-->
+    <!-- Include *at least* the core style and default theme -->
+    <link href="../../Syntax%20Highlighter/Styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="../../Syntax%20Highlighter/Styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <!--Share FB SDK-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1008469499244689";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Share FB SDK Ends-->
+    <!--Share on Twitter SDK Start-->
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    </script>
+    <!--share on Twitter SDK Ends-->
+    <nav id="Header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="padding-left: 10px">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p2 style="font-family:  'Roboto', sans-serif, cursive; font-size:30px; color:white;font-weight:700;text-align:left"><a href="/Index.html" style="color:#fff;">IntelliLearn</a></p2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!--<li>
+                        <a href="#">Home</a>
+                    </li>-->
+                    <li class="dropdown menu-large">
+                        <a href="../../iOS.html" class="dropdown-toggle" data-toggle="dropdown">iOS<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">iOS Blogs and Videos</li>
+                                    <li><a href="/iOS.html">iOS blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/iOS-Video-Tutorials.html" class="dropdown-content">iOS Videos</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Get-Started.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p style="align-content:center">What You Need to Begin in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Youtube-integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to Integrate Youtube in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Activity-Indicator.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>What is Activity Indicator in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Facebook-Integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to intergrate Facebook in iOS</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Windows.html" class="dropdown-toggle" data-toggle="dropdown">Windows<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs And Videos</li>
+                                    <li><a href="/Windows.html">Windows Blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Windows-Video-Tutorials.html" class="dropdown-content">Windows Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/AppBar.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p style="align-content:center">What is AppBar in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/CheckBox.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is CheckBox in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/FilePicker.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is FilePicker in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/Navigation-Of-Data.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>How to navigate data among pages in Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Swift.html" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('Swift')">Swift<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Swift Blogs and Videos</li>
+                                    <li><a href="/Swift.html">Swift Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Swift Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Swift-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Swift-Map.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p style="align-content:center">What is integrate Map in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Intro-Swift.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>Introduction To Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/TableView.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is Tableview in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/UIAlertview.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is UIAlertview in Swift</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Technology.html" class="dropdown-toggle" data-toggle="dropdown">Technology<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Technology Blogs and Video</li>
+                                    <li><a href="/Technology.html" style="color:black">Technology Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Technology-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/AppleTV.html" class="thumbnail"><img src="../../images/abs.jpg" /><p style="align-content:center">What is Apple TV</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/iBeacon.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is iBeacon</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/Github.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>How To Make Use of Github for Uploading Project</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/RapChat.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is Rapchat</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href=" " class="dropdown-toggle" data-toggle="dropdown">Python<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Python Blogs and Video</li>
+                                    <li><a href="/Python.html">Python Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Python-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                        <li><a href="#" class="dropdown-content">Headers</a></li>
+                                        <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Dictionary.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p style="align-content:center">What is Dictionary Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Number-Math-Python.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is Number and Math Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Typecasting.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is concept of Typecasting in Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Working-With-Variable.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>How To Work With Variable In Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs</li>
+                                    <!--<li><a href="#">Available glyphs</a></li>
+                                    <li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>-->
+                                    <li class="dropdown-header">All Videos</li>
+                                    <!--<li><a href="#">Example</a></li>
+                                    <li><a href="#">Aligninment options</a></li>
+                                    <li><a href="#">Headers</a></li>
+                                    <li><a href="#">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">HTML/CSS</li>
+                                    <li><a href="/Html-CSS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Html5-Css3-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">.Net Framework</li>
+                                    <li><a href="/ASP.NET.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/ASP.NET-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">SQL</li>
+                                    <li><a href="/SQL.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/SQL-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">AngularJS</li>
+                                    <li><a href="/AngularJS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/AngularJS-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">Java</li>
+                                    <li><a href="/Java.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Java-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Intellibase</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <ul>
+                        <li>
+                        <li><a href="https://www.facebook.com/IntelliLearn-1421998811435252/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/intellirisecorp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid" style="background-color:#ffffff;">
+        <div class="row">
+            <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                <iframe width="500" height="200" src="http://www.youtube.com/embed/1dogXWwkrZ8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <hr>
+            <div class="col-sm-12" style="text-align:center;padding-top:20px">
+                <h1>iOS Development Tutorials:Gestures in iOS App Development</h1>
+                <h4>Posted By:<a href="#">Himanshu Goyal</a></h4>
+            </div>
+        </div>
+        <ul class="sharing-buttons">
+            <li style="margin-left:10px;">
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fintellilearn.intellirisecorp.com%2FComputer-Programming%2FiOS-App-Development%2FGestures.html&amp;src=sdkpreparse" data-layout="button_count" data-size="small" data-mobile-iframe="true"><i class="fa fa-facebook-square"></i>Share on Facebook</a>
+            </li>
+            <li>
+                <a class="twitter" href="https://twitter.com/share" target="_blank"><i class="fa fa-twitter-square"></i>Tweet</a>
+            </li>
+            <li>
+                <a class="google-plus" href="https://plus.google.com/share?url=http://intellilearn.intellirisecorp.com/Computer-Programming/iOS-App-Development/Gestures.html" target="_blank"><i class="fa fa-google-plus-square"></i>Share on Google+</a>
+            </li>
+        </ul>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8" style="padding-top:30px">
+            <p46>
+                UIGestureRecognisers is the abstract class, therefore it can be used directly. The Gesture that the Apple provides are
+                <ul>
+                    <li><strong>UIPanGestures.</strong></li>
+                    <li><strong>UISwipeGestures.</strong></li>
+                    <li><strong>UIPinchGestures.</strong></li>
+                    <li><strong>UITapGestures.</strong></li>
+                    And many more…
+                </ul>
+                <p46>Talking about the gesture we will first talk about the<strong>Pan gesture:</strong></p46>
+                <h2>Pan Gesture</h2>
+                <p46>Here first we will talk about the gesture that is pan gesture, the pan or in other words drag. This gesture is handy when you want to allow your users to drag views around the screen. In this part, except for implementing the necessary code that will enable our app to support the pan gesture, we will meet a special method of the UIPanGestureRecognizer class, named velocityInView. This method returns a CGPoint value, and informs us about how many points per second the dragged view travels in both the horizontal and vertical axis while dragging. Let’s Begin the Coding Part For using the pan gesture we will build a view and will paste a Label on that view.After pasting the label the view will appear like this.</p46>
+                <br />
+                <div class="zoomin">
+                    <img src="../../images/iOS-App-Development/ios30.2.png" class="img-responsive" alt="Implementing Pan Gesture">
+                </div>
+                <br />
+                <p46>Now moving onto the coding part We need to go the Viewcontroller.m file and write the following code in the program below the ViewController.m file and under the ViewDidLoad we need to write the following code.</p46>
+                <br />
+                <pre class="brush:css">
+                self.view.backgroundColor = [UIColor whiteColor];
+                /* Let's first create a label */
+                CGRect labelFrame = CGRectMake(0.0f, /* X */
+                                   
+                0.0f, /* Y */ 150.0f, /* Width */ 100.0f); /* Height */
+               // self.helloWorldLabel = [[UILabel alloc] initWithFrame:labelFrame];
+                self.helloWorldLabel.text = @"Hello World";
+                self.helloWorldLabel.backgroundColor = [UIColor blackColor];
+                self.helloWorldLabel.textColor = [UIColor whiteColor];
+                self.helloWorldLabel.textAlignment = UITextAlignmentCenter;
+                /* Make sure to enable user interaction; otherwise, tap events won't be caught on this label */
+                self.helloWorldLabel.userInteractionEnabled = YES;
+                /* And now make sure this label gets displayed on the view */
+                [self.view addSubview:self.helloWorldLabel];
+                /* Create the Pan Gesture Recognizer */
+                self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                                                    action:@selector(handlePanGestures:)];
+                /* At least and at most we need only one finger to activate the pan gesture recognizer */
+                self.panGestureRecognizer.minimumNumberOfTouches = 1;
+                self.panGestureRecognizer.maximumNumberOfTouches = 1;
+                /* Add it to the view */
+                [self.helloWorldLabel addGestureRecognizer:self.panGestureRecognizer];
+                </pre>
+                <br />
+                <p46>Now I will tell you what I have done here. Firstly we have set the background as white and then on the label I have placed a text named as “Hello world” after that I have set the background colour of the text as Black. Then I have set the colour of text in label as white colour. And kept the alignment as centre. Here alignment means where we want to place a particular thing. The alignment could be in centre, left or right Applying the Pinch Gesture..... After this we need to add the pan gesture. Here I have added the Pan gesture with the maximum and minimum number of touch required for pan gesture. </p46>
+                <pre class="brush:css">
+                 - (void) handlePanGestures:(UIPanGestureRecognizer*)paramSender
+                  {
+                if (paramSender.state != UIGestureRecognizerStateEnded && paramSender.state != UIGestureRecognizerStateFailed)
+                  {
+                CGPoint location = [paramSender locationInView:paramSender.view.superview];
+                paramSender.view.center = location;
+                  }
+                 }
+                 </pre>
+                <br />
+                <p46>
+                    Here is the explanation for the following code Here what I have done is that i have created the function of pan gesture and set the location of the pan gesture on the view.
+                    <br />
+                    <img src="../../images/iOS-App-Development/ios30.3.png" alt="Pan Gesture in iOS" />
+                    <br />
+                    We can drag the label anywhere we want. After implementing the pan gesture we will implement the Pinch gesture in the application.
+                </p46>
+                <br />
+                <h2>Pinch Gesture</h2>
+                <br />
+                <p46>Taking about the gestures here we have another gesture known as pinch gesture. Pinch gesture is used to actually change the size of the view. The pinch gesture is useful in changing the transformation of the screen by scaling it upward or downwards.one of the example of the pinch gesture is in your google app where we pinch in and pinch out. Here we do not need to add any image view we will work by using a view. For using the pinch gesture in the application we need to use two fingers.</p46>
+                <br />
+                <img src="../../images/iOS-App-Development/ios30.4.png" alt="Pan Gesture in iOS">
+                <br />
+                <p46>Moving onto the coding part Here also we have taken the view and worked on that. Here I have the class with the name ViewController. Beginning the important part we have a view.</p46>
+                <br />
+                <img src="../../images/iOS-App-Development/ios30.5.png" alt="Implementing Pan Gesture in iOS">
+                <br />
+                <p46>First we need to go the ViewController.h file and write the Following code</p46>
+                <pre class="brush:css">
+                @interface ViewController : UIViewController
+                @property (nonatomic, strong)UIPinchGestureRecognizer *pinchGestureRecognizer;
+                @property (nonatomic, strong) UILabel *myBlackLabel;
+                @property (nonatomic, unsafe_unretained) CGFloat currentScale	
+                </pre>
+                <p46>Here I have created the property of the pinch gesture and of the label. It is not necessary to create the property of the label every time. And the last property is of the scale. Now the next thing we need to do is to the viewController.m file and write the following code.</p46>
+                <pre class="brush:css">
+                  self.view.backgroundColor = [UIColor whiteColor];
+                CGRect labelRect = CGRectMake(0.0f, 0.0f,200.0f,200.0f);
+                /* X */
+                /* Y */
+                /* Width */
+               /* Height */
+                self.myBlackLabel = [[UILabel alloc] initWithFrame:labelRect]; self.myBlackLabel.center = self.view.center; self.myBlackLabel.backgroundColor = [UIColor blackColor];
+                self.myBlackLabel.userInteractionEnabled = YES; [self.view addSubview:self.myBlackLabel];   
+                self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self<br />
+                                                                       action:@selector(handlePinches:)];<br />
+                [self.myBlackLabel addGestureRecognizer:self.pinchGestureRecognizer];
+                 }
+                </pre>
+                <br />
+                <p46>Now let’s talk about what I have done here Firstly I have set the background colour of view as white and then set the size of the label. Then I have set the label in the view. The next thing I have done is set the color of the text in the label as black. Then I have created the pinch gesture recognizer. After that I have added the gesture recognizer to the view. I have written the following code under the view did load part. Moving on I have created the function of the hand pinches that is used to change the size of the object. For that we have to include the following code in our program.</p46>
+                <br />
+                <pre class="brush:css">
+                - (void) handlePinches:(UIPinchGestureRecognizer*)paramSender{
+               if (paramSender.state == UIGestureRecognizerStateEnded){ self.currentScale = paramSender.scale;
+               } else if (paramSender.state == UIGestureRecognizerStateBegan && self.currentScale != 0.0f){
+               paramSender.scale = self.currentScale; }
+               if (paramSender.scale != NAN && paramSender.scale != 0.0){
+               paramSender.view.transform = CGAffineTransformMakeScale(paramSender.scale,paramSender.scale);
+               } }
+                </pre>
+                <br />
+                <p46>After the following code your screen will look like this:</p46>
+                <br />
+                <img src="../../images/iOS-App-Development/ios30.6.png" alt="Pinch Gesture By IntelliLearn" />
+                <br />
+                <h2>Swipe Gesture</h2>
+                <p46>After the two Gestures I will tell you one of the other gesture that we use in iOS application that is Swipe gesture. One of the most important thing that the iOS application uses is swipe gesture. Swiping can be done in any direction. A swipe gesture object can trigger and action in one direction only. Many of the application today use swipe gesture. The swipe gesture improves the user interface of the application. Let’s begin with the coding part Now let’s start the Coding part. Here I have used the “MMDrawerViewController” to make a slide out sidebar menu. You can download the files from Github and you just need include them in your project.</p46>
+                <br />
+                <div class="zoomin">
+                    <img src="../../images/iOS-App-Development/ios30.7.png" class="img-responsive" alt="Swipe Gesture Demo By IntelliLearn" />
+                </div>
+                <br />
+                <p46>Here I have created the project with the name “SwipeGestureDemo”. Now the next thing we need to do is to create two views. One is the main page and other is the other view is the view that appear on the swipe. For the first view take the reference from the file owner. The first view will appear like this.</p46>
+                <div class="zoomin">
+                    <img src="../../images/iOS-App-Development/ios30.8.png" class="img-responsive" alt="Swipe Gesture Creation By IntelliLearn" />
+                </div>
+                <p46>We will define the class of the view as ”ViewController” which was the name of the view that we have created.After we will add a new file named as “Second View Controller” that will appear when we will swipe the screen.</p46>
+                <div class="zoomin">
+                    <img src="../../images/iOS-App-Development/ios30.9.png" class="img-responsive" alt="Choose Template For Project By IntelliLearn">
+                </div>
+                <br />
+                <div class="zoomin">
+                    <img src="../../images/iOS-App-Development/ios30.10.png" class="img-responsive" alt="option for new File while creating project" />
+                </div>
+                <br />
+                <p46>Our Second View Will appear like this</p46>
+                <img src="../../images/iOS-App-Development/ios30.11.png" alt="Second View in Swipe Gesture By IntelliLearn" />
+                <br />
+                <p46>Moving on the coding part First we have to go to the AppDelagate.h file and here we will define the code for navigation controller</p46>
+                <pre class="brush:css">
+               - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+                self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+                ViewController * objview = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+                UINavigationController * nav = [[ UINavigationController alloc]initWithRootViewController: objview];
+                nav.navigationBarHidden = YES;
+                self.window.rootViewController = nav ;
+                [self.window makeKeyAndVisible];
+                // Override point for customization after application launch.
+                return YES;
+                 }
+                </pre>
+            </p46>Here under the “didFinishLaunchingOptions” we will define the code for navigation controller. The next thing we need to do is to go to the “ViewController.m” file and import the “SecondViewController.h” file and under the “ViewDidLoad” we will define the swipe Gesture and set the Direction of the swipe here I have set the direction as left. Your code will look like.</p46>
+            <pre class="brush:css">
+                - (void)viewDidLoad {
+                [super viewDidLoad];
+                UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeGesture)];
+                [swipeGesture setDirection:UISwipeGestureRecognizerDirectionLeft];
+                [self.view addGestureRecognizer:swipeGesture];
+                </pre>
+            <p46>We will create the function for the Right Gesture that can be done by the following code just below the code that we just wrote under the “ViewDidLoad”.</p46>
+            <br />
+            <pre class="brush:css">
+                 - (void)rightSwipeGesture
+                 {
+                SecondViewController *objSecondView =[[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
+                [self.navigationController pushViewController:objSecondView animated:YES];
+                 </pre>
+            <p46>Here we have created the object of the second view to which the first View will navigate and pushed the first view onto the second. After writing the following code your “ViewController.h” file will look like this:</p46>
+            <br />
+            <pre class="brush:css">
+                #import "ViewController.h"
+                #import "SecondViewController.h"
+                @interface ViewController ()
+                @end
+                @implementation ViewController
+                - (void)viewDidLoad {
+                    [super viewDidLoad];
+                    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(rightSwipeGesture)];
+                    [swipeGesture setDirection:UISwipeGestureRecognizerDirectionLeft];
+                    [self.view addGestureRecognizer:swipeGesture];
+                    // Do any additional setup after loading the view, typically from a nib.
+                }
+                - (void)rightSwipeGesture
+                {
+                    SecondViewController *objSecondView =[[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
+                    [self.navigationController pushViewController:objSecondView animated:YES];
+    
+                }
+                - (void)didReceiveMemoryWarning {
+                    [super didReceiveMemoryWarning];
+                    // Dispose of any resources that can be recreated.
+                }
+                @end
+                </pre>
+            <br />
+        </div>
+        <div class="col-sm-2">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- IntelliLearnNewad -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:200px;height:600px"
+                 data-ad-client="ca-pub-7832718248071183"
+                 data-ad-slot="6528729151"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+        </div>
+        <div class="col-sm-12" align="center" style="padding-bottom:50px;padding-top:70px">
+            <p47>Hope You Like This Part Of Coding.Stay Tuned To <p48><i>www.Intellilearn.in</i></p48> For More Blogs.</p47>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <section data-widget="footer" class="tgpfooter clearfix">
+            <div class="container clearfix">
+                <h2>Our Events</h2>
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../../images/Events/0.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/1.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/2.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/3.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/4.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/5.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/7.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/8.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/9.png" />
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <p class="copyright">Copyright @ 2016.IntelliRise Tech Solutions. All rights reserved.For reprint rights. Intellilearn.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Navbar fixed bottom -->
+    <script>
+        // Dropdown Menu Fade
+        jQuery(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop().fadeIn("fast");
+                },
+                function () {
+                    $('.dropdown-menu', this).stop().fadeOut("fast");
+                });
+        });
+    </script>
+</body>
+</html>

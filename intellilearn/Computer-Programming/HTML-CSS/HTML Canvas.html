@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IntelliLearn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--stylesheet-->
+
+    <link href="../../CSS/Style.css" rel="stylesheet" />
+    <link href="../../CSS/intellilearn1.css" rel="stylesheet" />
+    <link href="../../CSS/sticky-footer-navbar.css" rel="stylesheet" />
+    <!--Syntax Highlighter-->
+    <!-- Include required JS files -->
+    <script src="../../Syntax%20Highlighter/Scripts/shCore.js"></script>
+
+    <!--
+        At least one brush, here we choose JS. You need to include a brush for every
+        language you want to highlight
+    -->
+    <script src="../../Syntax%20Highlighter/Scripts/shBrushCss.js"></script>
+    <!--<script src="../../Syntax%20Highlighter/Scripts/shBrushCSharp.js"></script>-->
+    <!-- Include *at least* the core style and default theme -->
+    <link href="../../Syntax%20Highlighter/Styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="../../Syntax%20Highlighter/Styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <!--Share FB SDK-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1008469499244689";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Share FB SDK Ends-->
+    <!--Share on Twitter SDK Start-->
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    </script>
+    <!--share on Twitter SDK Ends-->
+    <nav id="Header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="padding-left: 10px">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p2 style="font-family:  'Roboto', sans-serif, cursive; font-size:30px; color:white;font-weight:700;text-align:left"><a href="/Index.html" style="color:#fff;">IntelliLearn</a></p2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!--<li>
+                        <a href="#">Home</a>
+                    </li>-->
+                    <li class="dropdown menu-large">
+                        <a href="../../iOS.html" class="dropdown-toggle" data-toggle="dropdown">iOS<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">iOS Blogs and Videos</li>
+                                    <li><a href="/iOS.html">iOS blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/iOS-Video-Tutorials.html" class="dropdown-content">iOS Videos</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../iOS-App-Development/Get-Started.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p style="align-content:center">What You Need to Begin in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../iOS-App-Development/Youtube-integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to Integrate Youtube in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../iOS-App-Development/Activity-Indicator.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>What is Activity Indicator in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../iOS-App-Development/Facebook-Integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to intergrate Facebook in iOS</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Windows.html" class="dropdown-toggle" data-toggle="dropdown">Windows<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs And Videos</li>
+                                    <li><a href="/Windows.html">Windows Blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Windows-Video-Tutorials.html" class="dropdown-content">Windows Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/AppBar.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p style="align-content:center">What is AppBar in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/CheckBox.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is CheckBox in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/FilePicker.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is FilePicker in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/Navigation-Of-Data.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>How to navigate data among pages in Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Swift.html" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('Swift')">Swift<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Swift Blogs and Videos</li>
+                                    <li><a href="/Swift.html">Swift Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Swift Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Swift-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Swift-Map.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p style="align-content:center">What is integrate Map in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Intro-Swift.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>Introduction To Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/TableView.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is Tableview in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/UIAlertview.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is UIAlertview in Swift</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Technology.html" class="dropdown-toggle" data-toggle="dropdown">Technology<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Technology Blogs and Video</li>
+                                    <li><a href="/Technology.html" style="color:black">Technology Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Technology-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/AppleTV.html" class="thumbnail"><img src="../../images/abs.jpg" /><p style="align-content:center">What is Apple TV</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/iBeacon.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is iBeacon</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/Github.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>How To Make Use of Github for Uploading Project</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/RapChat.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is Rapchat</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href=" " class="dropdown-toggle" data-toggle="dropdown">Python<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Python Blogs and Video</li>
+                                    <li><a href="/Python.html">Python Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Python-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                        <li><a href="#" class="dropdown-content">Headers</a></li>
+                                        <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Dictionary.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p style="align-content:center">What is Dictionary Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Number-Math-Python.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is Number and Math Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Typecasting.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is concept of Typecasting in Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Working-With-Variable.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>How To Work With Variable In Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs</li>
+                                    <!--<li><a href="#">Available glyphs</a></li>
+                                    <li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>-->
+                                    <li class="dropdown-header">All Videos</li>
+                                    <!--<li><a href="#">Example</a></li>
+                                    <li><a href="#">Aligninment options</a></li>
+                                    <li><a href="#">Headers</a></li>
+                                    <li><a href="#">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">HTML/CSS</li>
+                                    <li><a href="/Html-CSS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Html5-Css3-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">.Net Framework</li>
+                                    <li><a href="/ASP.NET.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/ASP.NET-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">SQL</li>
+                                    <li><a href="/SQL.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/SQL-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">AngularJS</li>
+                                    <li><a href="/AngularJS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/AngularJS-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">Java</li>
+                                    <li><a href="/Java.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Java-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Intellibase</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <ul>
+                        <li>
+                        <li><a href="https://www.facebook.com/IntelliLearn-1421998811435252/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/intellirisecorp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid" style="background-color:#ffffff;">
+        <div class="row">
+            <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                <iframe width="500" height="200" src="http://www.youtube.com/embed/1dogXWwkrZ8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br />
+            <hr />
+            <div class="col-sm-12" style="text-align:center;padding-top:20px">
+                <h1>HTML/CSS Development Tutorials:HTML Canvas</h1>
+                <h4>Posted By:<a href="#">Ankita</a></h4>
+            </div>
+        </div>
+        <ul class="sharing-buttons">
+            <li style="margin-left:10px;">
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fintellilearn.intellirisecorp.com%2FComputer-Programming%2FHTML-CSS%2FHTML%20Canvas.html&amp;src=sdkpreparse" data-layout="button_count" data-size="small" data-mobile-iframe="true"><i class="fa fa-facebook-square"></i>Share on Facebook</a>
+            </li>
+            <li>
+                <a class="twitter" href="https://twitter.com/share" target="_blank"><i class="fa fa-twitter-square"></i>Tweet</a>
+            </li>
+            <li>
+                <a class="google-plus" href="https://plus.google.com/share?url=http://intellilearn.intellirisecorp.com/Computer-Programming/HTML-CSS/HTML%20Canvas .html" target="_blank"><i class="fa fa-google-plus-square"></i>Share on Google+</a>
+            </li>
+        </ul>
+        <div class="col-sm-8" style="padding-top:30px">
+            <p46>The HTML &lt;canvas&gt; element is specifically used to draw graphics on the web page. It is defined in HTMLcode using width and height attributes.</p46>
+            <p46>A canvas is a rectangular area on an HTML page in which it has no border and no content.The proper usability of the canvas element is accomplished by taking advantage of the HTML5 Canvas API which is used by writing JavaScript that can access the canvas area through a full set of drawing functionsand however allowing for dynamically generated graphics.</p46>
+            <br />
+            <p46>IMPORTANT: The canvas context is an object with properties and methodologies by which user can use torender graphics inside the canvas element. The context can be 2d or webgl (3d). </p46>
+            <br />
+            <p46>We can get the Canvas element in DOM by using getElementById() method as follows:</p46>
+            <h6> var canvas = document.getElementById(&quot;mycanvas&quot;);</h6>
+            <br />
+            <pre class="brush:css">
+                    Lets implement a small example to understand this better
+                    &lt;!DOCTYPE HTML&gt;<br />
+                    &lt;html&gt;<br />
+                    &lt;head&gt;<br />
+                    &lt;style&gt;<br />
+                    #mycanvas{border:2px solid blue;}<br />
+                    &lt;/style&gt;<br />
+                    &lt;/head&gt;<br />
+                    &lt;body&gt;<br />
+                    &lt;canvas id=&quot;mycanvas&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;<br />
+                    &lt;/canvas&gt;<br />
+                    &lt;/body&gt;<br />
+                    &lt;/html&gt;<br />
+                </pre>
+            <br />
+            <p46>Output</p46>
+            <div class="zoomin">
+                <img src="../../images/HtmlorCSS/Html2.png" class="img-responsive" alt="HTML CANVAS By IntelliLearn">
+            </div>
+            <br />
+            <p>Lets take an Example</p>
+            <pre class="brush:css">
+                    Lets try this one
+                    &lt;!DOCTYPE html&gt;<br />
+                    &lt;html&gt;<br />
+                    &lt;body&gt;<br />
+                    &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;<br />
+                    &lt;/canvas&gt;<br />
+                    &lt;script&gt;<br />
+                    var c = document.getElementById(&quot;myCanvas&quot;);<br />
+                    var context = c.getContext(&quot;2d&quot;);<br />
+                    context.fillStyle = &quot;#FF0000&quot;;<br />
+                    context.fillRect(10,20,100,75);<br />
+                    &lt;/script&gt;<br />
+                    &lt;/body&gt;<br />
+                    &lt;/html&gt;<br />
+                </pre>
+            <br />
+            <p48>OUTPUT</p48>
+            <div class="zoomin">
+                <img src="../../images/HtmlorCSS/html3.png" class="img-responsive" alt="HTML Canvas By IntelliLearn" />
+            </div>
+            <br />
+            <p48>
+                In order to draw a line, we use four canvas API methods.
+                <br />* We start with the beginPath() method which instructs the browser to prepare itself to draw a new path.
+                <br />* Then, we use the moveTo(x, y) method to set the line’s starting point.
+                <br />* Followed by lineTo(x, y) method which sets the ending point and draws the line by connecting the two points.
+            </p48>
+            <br />
+            <p48>At this point the line will be drawn, but it’s still invisible. To make it visible we use the stroke() method to display the line with the default black color. </p48>
+            <br />
+            <p48>Lets try this one to understand this better</p48>
+            <pre class="brush:css">
+                    &lt;!DOCTYPE html&gt;<br />
+                    &lt;html&gt;<br />
+                    &lt;body&gt;<br />
+                    &lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;<br />
+                    &lt;/canvas&gt;<br />
+                    &lt;script&gt;<br />
+                    var c = document.getElementById(&quot;myCanvas&quot;);<br />
+                    var context = c.getContext(&quot;2d&quot;);<br />
+                    context.beginPath();<br />
+                    context.moveTo(50, 50);<br />
+                    context.lineTo(250, 150);<br />
+                    context.stroke();<br />
+                    &lt;/script&gt;<br />
+                    &lt;/body&gt;<br />
+                    &lt;/html&gt;<br />
+                </pre>
+            <br />
+            <p48>OUTPUT</p48>
+            <div class="zoomin">
+                <img src="../../images/HtmlorCSS/html4.png" class="image-blogs" alt="HTML CANVAS" />
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- IntelliLearnNewad -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:200px;height:600px"
+                 data-ad-client="ca-pub-7832718248071183"
+                 data-ad-slot="6528729151"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="col-sm-12" align="center" style="padding-bottom:50px;padding-top:70px">
+            <p47>Hope You Like This Part Of Coding.Stay Tuned To <p48><i>www.Intellilearn.in<i></p48> For More Blogs.</p47>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <section data-widget="footer" class="tgpfooter clearfix">
+            <div class="container clearfix">
+                <h2>Our Events</h2>
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../../images/Events/0.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/1.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/2.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/3.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/4.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/5.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/7.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/8.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/9.png" />
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <p class="copyright">Copyright @ 2016.IntelliRise Tech Solutions. All rights reserved.For reprint rights. Intellilearn.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Navbar fixed bottom -->
+    <script>
+        // Dropdown Menu Fade
+        jQuery(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop().fadeIn("fast");
+                },
+                function () {
+                    $('.dropdown-menu', this).stop().fadeOut("fast");
+                });
+        });
+    </script>
+</body>
+</html>

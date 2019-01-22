@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IntelliLearn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--stylesheet-->
+
+    <link href="../../CSS/Style.css" rel="stylesheet" />
+    <link href="../../CSS/intellilearn1.css" rel="stylesheet" />
+    <link href="../../CSS/sticky-footer-navbar.css" rel="stylesheet" />
+    <!--Syntax Highlighter-->
+    <!-- Include required JS files -->
+    <script src="../../Syntax%20Highlighter/Scripts/shCore.js"></script>
+
+    <!--
+        At least one brush, here we choose JS. You need to include a brush for every
+        language you want to highlight
+    -->
+    <script src="../../Syntax%20Highlighter/Scripts/shBrushCss.js"></script>
+    <!--<script src="../../Syntax%20Highlighter/Scripts/shBrushCSharp.js"></script>-->
+    <!-- Include *at least* the core style and default theme -->
+    <link href="../../Syntax%20Highlighter/Styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="../../Syntax%20Highlighter/Styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <!--Share FB SDK-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1008469499244689";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Share FB SDK Ends-->
+    <!--Share on Twitter SDK Start-->
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    </script>
+    <!--share on Twitter SDK Ends-->
+    <nav id="Header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="padding-left: 10px">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p2 style="font-family:  'Roboto', sans-serif, cursive; font-size:30px; color:white;font-weight:700;text-align:left"><a href="/Index.html" style="color:#fff;">IntelliLearn</a></p2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!--<li>
+                        <a href="#">Home</a>
+                    </li>-->
+                    <li class="dropdown menu-large">
+                        <a href="../../iOS.html" class="dropdown-toggle" data-toggle="dropdown">iOS<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">iOS Blogs and Videos</li>
+                                    <li><a href="/iOS.html">iOS blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/iOS-Video-Tutorials.html" class="dropdown-content">iOS Videos</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Get-Started.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p style="align-content:center">What You Need to Begin in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Youtube-integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to Integrate Youtube in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Activity-Indicator.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>What is Activity Indicator in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Facebook-Integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to intergrate Facebook in iOS</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Windows.html" class="dropdown-toggle" data-toggle="dropdown">Windows<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs And Videos</li>
+                                    <li><a href="/Windows.html">Windows Blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Windows-Video-Tutorials.html" class="dropdown-content">Windows Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/AppBar.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p style="align-content:center">What is AppBar in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/CheckBox.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is CheckBox in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/FilePicker.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is FilePicker in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/Navigation-Of-Data.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>How to navigate data among pages in Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Swift.html" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('Swift')">Swift<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Swift Blogs and Videos</li>
+                                    <li><a href="/Swift.html">Swift Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Swift Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Swift-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Swift-Map.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p style="align-content:center">What is integrate Map in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Intro-Swift.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>Introduction To Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/TableView.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is Tableview in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/UIAlertview.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is UIAlertview in Swift</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Technology.html" class="dropdown-toggle" data-toggle="dropdown">Technology<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Technology Blogs and Video</li>
+                                    <li><a href="/Technology.html" style="color:black">Technology Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Technology-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/AppleTV.html" class="thumbnail"><img src="../../images/abs.jpg" /><p style="align-content:center">What is Apple TV</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/iBeacon.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is iBeacon</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/Github.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>How To Make Use of Github for Uploading Project</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/RapChat.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is Rapchat</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href=" " class="dropdown-toggle" data-toggle="dropdown">Python<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Python Blogs and Video</li>
+                                    <li><a href="/Python.html">Python Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Python-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                        <li><a href="#" class="dropdown-content">Headers</a></li>
+                                        <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Dictionary.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p style="align-content:center">What is Dictionary Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Number-Math-Python.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is Number and Math Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Typecasting.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is concept of Typecasting in Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Working-With-Variable.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>How To Work With Variable In Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs</li>
+                                    <!--<li><a href="#">Available glyphs</a></li>
+                                    <li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>-->
+                                    <li class="dropdown-header">All Videos</li>
+                                    <!--<li><a href="#">Example</a></li>
+                                    <li><a href="#">Aligninment options</a></li>
+                                    <li><a href="#">Headers</a></li>
+                                    <li><a href="#">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">HTML/CSS</li>
+                                    <li><a href="/Html-CSS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Html5-Css3-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">.Net Framework</li>
+                                    <li><a href="/ASP.NET.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/ASP.NET-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">SQL</li>
+                                    <li><a href="/SQL.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/SQL-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">AngularJS</li>
+                                    <li><a href="/AngularJS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/AngularJS-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">Java</li>
+                                    <li><a href="/Java.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Java-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Intellibase</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <ul>
+                        <li>
+                        <li><a href="https://www.facebook.com/IntelliLearn-1421998811435252/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/intellirisecorp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid" style="background-color:#ffffff;">
+        <div class="row">
+            <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                <iframe width="500" height="200" src="http://www.youtube.com/embed/1dogXWwkrZ8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <hr>
+            <div class="col-sm-12" style="text-align:center;padding-top:20px">
+                <h1>iOS App Development Tutorials:Mapview in iOS App Development</h1>
+                <h4>Posted By:<a href="#">Gaurav Saini</a></h4>
+            </div>
+        </div>
+        <ul class="sharing-buttons">
+            <li style="margin-left:10px;">
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fintellilearn.intellirisecorp.com%2FComputer-Programming%2FiOS-App-Development%2FMapview.html&amp;src=sdkpreparse" data-layout="button_count" data-size="small" data-mobile-iframe="true"><i class="fa fa-facebook-square"></i>Share on Facebook</a>
+            </li>
+            <li>
+                <a class="twitter" href="https://twitter.com/share" target="_blank"><i class="fa fa-twitter-square"></i>Tweet</a>
+            </li>
+            <li>
+                <a class="google-plus" href="https://plus.google.com/share?url=http://intellilearn.intellirisecorp.com/Computer-Programming/iOS-App-Development/Mapview.html" target="_blank"><i class="fa fa-google-plus-square"></i>Share on Google+</a>
+            </li>
+        </ul>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8" style="padding-top:30px">
+            <p46>One of the important feature that we use today is map in our day to day life. So it become important for a developer to integrate map in his application. Therefore x code provides a framework which can be used for integrating the map in iOS. MapKit is a neat API, comes with the iOS SDK, that allows you to display maps, navigate through maps, add annotations for specific locations, add overlays on existing maps, etc. In this tutorial, we’ll walk you though the basics of the API and show you how to place a pin on the map.</p46>
+            <br />
+            <h3>Coding Part</h3>
+            <p46>Firstly create a single view application in x code .here I have created the project with the name ”mapViewTry” .Here I have not used the storyboard. I am simply working on the view controller Firstly you need to import the framework that is “mapkit.framework” in your project.the next thing you need to do is to paste MKMapView on your view controller.</p46>
+            <br />
+
+            <img src="../../images/iOS-App-Development/ios24.1.png" class="img-responsive" alt="Mapview in iOS App Development By IntelliLearn" />
+
+            <br />
+            <p46> Remember to take the reference of the MKMapView</p46>
+            <br />
+
+            <img src="../../images/iOS-App-Development/ios24.2.png" class="img-responsive" alt="Mapview in iOS App Development By IntelliLearn" />
+
+            <br />
+            <p46>Till now, we haven’t written a line of code. Before moving on, let’s run the app and see how it looks like. As soon as the app launches, it prompts you to access the location service. Just tap “OK” to permit it to use the current location. One thing we need to do is to set the location which can be done as</p46>
+            <br />
+
+            <img src="../../images/iOS-App-Development/ios24.3.png" class="img-responsive" alt="Mapview in iOS App Development By IntelliLearn" />
+
+            <br />
+            <br />
+            <p46>This will indicate the current location on map. Now let’s start working inside the project. We need to go to the appdelagate.m file and under the application didfinish launching we write the following code. It is the code for the navigation.</p46>
+            <br />
+            <pre class="brush:css">
+                @implementation MapViewTryFirstAppDelegate
+                - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+                {
+                    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+                    // Override point for customization after application launch.
+                    self.window.backgroundColor = [UIColor whiteColor];
+                    [self.window makeKeyAndVisible];
+                    MapViewTryFirstPage *first=[[MapViewTryFirstPage alloc]init];
+                    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:first];
+                    self.window.rootViewController=nav;
+                    return YES;
+                }
+                </pre>
+            <br />
+            <p46>Now we create a custom class. Here<strong>MapViewTrydataclass</strong>is our Custom class. Also you need to import the following file here.</p46>
+            <br />
+            <pre class="brush:css">
+                  #import "MapViewTryFirstAppDelegate.h"
+                  #import "MapViewTryFirstPage.h
+                 </pre>
+            <br />
+            <p46>In appdegate.m file Moving on we need to do some work in MapViewTrydataclass.h file. Here we need to<strong>Import the&lt;mapkit /mapkit.h&gt;file</strong> here. </p46>
+            <br />
+            <pre class="brush:css">
+                      #import &lt;uikit / UIKit.h&gt; 
+                      #import &lt;mapkit /MapKit.h&gt;
+                  </pre>
+            <br />
+            <p46>And below the interface you need to write the following codes.</p46>
+            <br>
+            <pre class="brush:css">
+                    @interface MapViewTryDataClass : UIViewController
+                    {
+                    NSString *_name;
+                    NSString *_address;
+                    CLLocationCoordinate2D _coordinate;
+                    }
+               </pre>
+            <br />
+            <p46>Now we need to create the property of the name,address and cocordinates that can be done as</p46>
+            <br />
+            <pre class="brush:css">
+                    @property (copy) NSString *name;
+                    @property (copy) NSString *address;
+                    @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+                    - (id)initWithName:(NSString*)name address:(NSString*)address coordinate:(CLLocationCoordinate2D)coordinate;
+                    @end
+                       </pre>
+            <br />
+            <p46>Now we need to move to the MApViewTryDataClass.m file and here you need to synthesise the property that we have created in .h file.</p46>
+            <br />
+            <pre class="brush:css">
+                     @implementation MapViewTryDataClass
+                     @synthesize name = _name;
+                     @synthesize address = _address;
+                     @synthesize coordinate = _coordinate;
+                  </pre>
+            <br />
+            <p46>After you have synthesize the property you need to write the following codes below synthesize.</p46>
+            <pre class="brush:css">
+                        - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+                        {
+                            self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+                            if (self) {
+                                // Custom initialization
+                            }
+                            return self;
+                        }
+                        - (void)viewDidLoad
+                        {
+                            [super viewDidLoad];
+    
+                        }
+                        - (id)initWithName:(NSString*)name address:(NSString*)address coordinate:(CLLocationCoordinate2D)coordinate {
+                            if ((self = [super init]))
+        
+                            {
+                                _name = [name copy];
+                                _address = [address copy];
+                                _coordinate = coordinate;
+                            }
+                            return self;
+                        }
+                        - (NSString *)title {
+                            if ([_name isKindOfClass:[NSNull class]])
+                                return @"Unknown charge";
+                            else
+                                return _name;
+                        }
+                        - (NSString *)subtitle {
+                            return _address;
+                        }
+                        -(void)didReceiveMemoryWarning
+                        {
+                            [super didReceiveMemoryWarning];
+                            // Dispose of any resources that can be recreated.
+                        }
+                        @end
+                  </pre>
+            <br />
+            <p46>And create the IBOutlet of the MKMapview and of the name pf the place The next thing we need to do is to go to the <strong>MapViewTryFirstClass.m</strong>  file and make a array and a dictionary here under the interface.</p46>
+            <br />
+            <pre class="brush:css">
+                  @interface MapViewTryFirstPage ()
+                  {
+                  NSArray *array;
+                  NSDictionary *dict1;
+                  }
+                  @end
+             </pre>
+            <p46>Here you need to import the files.</p46>
+            <pre>
+                    #import "MapViewTryFirstPage.h"
+                    #import "MapViewTryDataClass.h"
+                </pre>
+            <br />
+            <p46>And under the @implementation MapViewTryFirstPage you need to write thefollowing code.</p46>
+            <br />
+            <pre class="brush:css">
+                - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+                {
+                    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+                    if (self) {
+                        // Custom initialization
+                    }
+                    return self;
+                }
+                - (void)viewDidLoad
+                {
+                    [super viewDidLoad];
+                //        
+                  CLLocationCoordinate2D cod1;
+                  cod1.latitude = 25.333333;
+                  cod1.longitude = 83;
+                    MapViewTryDataClass *annotation1 = [[MapViewTryDataClass alloc] initWithName:@"luckhnow" address:@"Uttar pradesh" coordinate:cod1] ;
+                    [self.mkmap addAnnotation:annotation1];
+                }
+                - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id )annotation {
+                    static NSString *identifier = @"MyLocation";
+                    if ([annotation isKindOfClass:[MapViewTryFirstPage class]])
+                    {
+                        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mkmap dequeueReusableAnnotationViewWithIdentifier:identifier];
+                        if (annotationView == nil) {
+                            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+                        }
+        
+                        else {
+                            annotationView.annotation = annotation;
+                        }
+                        return annotationView;
+                    }
+                    return nil;
+                }
+                - (void)didReceiveMemoryWarning
+                {
+                    [super didReceiveMemoryWarning];
+                    // Dispose of any resources that can be recreated.
+                }
+                @end
+                 </pre>
+            <br />
+            <p46>One of the thing we have to remember is to set the location of the place this can be done as This part has to be done when simulator is on. So that the simulator shows the starting place.This part has to be done when the simulator is on. This will set the start location of the map. After writing the following code When you will run the app. </p46>
+            <br />
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios24.4.png" class="img-responsive" alt="Mapview in iOS App Development by IntelliLearn" />
+            </div>
+            <br />
+        </div>
+        <div class="col-sm-2">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- IntelliLearnNewad -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:200px;height:600px"
+                 data-ad-client="ca-pub-7832718248071183"
+                 data-ad-slot="6528729151"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="col-sm-12" align="center" style="padding-bottom:50px;padding-top:70px">
+            <p47>Hope You Like This Part Of Coding.Stay Tuned To <p48><i>www.Intellilearn.in</i></p48> For More Blogs.</p47>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <section data-widget="footer" class="tgpfooter clearfix">
+            <div class="container clearfix">
+                <h2>Our Events</h2>
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../../images/Events/0.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/1.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/2.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/3.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/4.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/5.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/7.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/8.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/9.png" />
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <p class="copyright">Copyright @ 2016.IntelliRise Tech Solutions. All rights reserved.For reprint rights. Intellilearn.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Navbar fixed bottom -->
+    <script>
+        // Dropdown Menu Fade
+        jQuery(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop().fadeIn("fast");
+                },
+                function () {
+                    $('.dropdown-menu', this).stop().fadeOut("fast");
+                });
+        });
+    </script>
+</body>
+</html>

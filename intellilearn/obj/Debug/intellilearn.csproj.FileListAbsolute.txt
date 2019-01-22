@@ -1,0 +1,296 @@
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\intellilearn.dll.config
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\intellilearn.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\intellilearn.pdb
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Antlr3.Runtime.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\EntityFramework.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\EntityFramework.SqlServer.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\System.Web.Optimization.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\System.Web.Providers.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\WebGrease.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\EntityFramework.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\EntityFramework.SqlServer.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\System.Web.Providers.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\obj\Debug\intellilearn.dll
+c:\users\intellirise\documents\visual studio 2013\Projects\intellilearn\intellilearn\obj\Debug\intellilearn.pdb
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\intellilearn.dll.config
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\intellilearn.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\intellilearn.pdb
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Antlr3.Runtime.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\EntityFramework.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\EntityFramework.SqlServer.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\System.Web.Optimization.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\System.Web.Providers.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\WebGrease.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\EntityFramework.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\EntityFramework.SqlServer.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\System.Web.Providers.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\obj\Debug\intellilearn.dll
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\obj\Debug\intellilearn.pdb
+C:\Users\Sushmita Saini\Downloads\intellilearn\intellilearn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\intellilearn.dll.config
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\intellilearn.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\intellilearn.pdb
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Antlr3.Runtime.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\EntityFramework.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\EntityFramework.SqlServer.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\System.Web.Optimization.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\System.Web.Providers.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\WebGrease.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\EntityFramework.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\EntityFramework.SqlServer.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\System.Web.Providers.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\obj\Debug\intellilearn.dll
+F:\IntelliRise\hjhjhjhj\intellilearn\intellilearn\obj\Debug\intellilearn.pdb
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\intellilearn.dll.config
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\intellilearn.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\intellilearn.pdb
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Antlr3.Runtime.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\EntityFramework.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\EntityFramework.SqlServer.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\System.Web.Optimization.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\System.Web.Providers.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\WebGrease.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\EntityFramework.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\EntityFramework.SqlServer.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\System.Web.Providers.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\obj\Debug\intellilearn.dll
+C:\Users\Sushmita Saini\Documents\intellilearn\intellilearn\obj\Debug\intellilearn.pdb
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\intellilearn.dll.config
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\intellilearn.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\intellilearn.pdb
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Antlr3.Runtime.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\EntityFramework.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\EntityFramework.SqlServer.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\System.Web.Optimization.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\System.Web.Providers.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\WebGrease.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\EntityFramework.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\EntityFramework.SqlServer.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\System.Web.Providers.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.Core.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\IntelliRise\Softwares\intellilearn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+F:\IntelliRise\Softwares\intellilearn\intellilearn\obj\Debug\intellilearn.dll
+F:\IntelliRise\Softwares\intellilearn\intellilearn\obj\Debug\intellilearn.pdb
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\intellilearn.dll.config
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\intellilearn.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\intellilearn.pdb
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Antlr3.Runtime.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.Core.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\EntityFramework.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\EntityFramework.SqlServer.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\System.Web.Optimization.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\System.Web.Providers.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\WebGrease.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\EntityFramework.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\EntityFramework.SqlServer.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\System.Web.Providers.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.Core.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\obj\Debug\intellilearn.dll
+C:\Users\Sushmita Saini\Documents\intelli-learn\intellilearn\obj\Debug\intellilearn.pdb
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\intellilearn.dll.config
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\intellilearn.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\intellilearn.pdb
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Antlr3.Runtime.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.Core.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.SqlServer.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\System.Web.Optimization.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\System.Web.Providers.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\WebGrease.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.SqlServer.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\System.Web.Providers.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.Core.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\obj\Debug\intellilearn.dll
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\obj\Debug\intellilearn.pdb
+F:\IntelliRise\Softwares\Intellilearn23june\intelli-learn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\intellilearn.dll.config
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\intellilearn.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\intellilearn.pdb
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Antlr3.Runtime.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\AspNet.ScriptManager.jQuery.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.AspNet.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.Core.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.SqlServer.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.ScriptManager.MSAjax.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.ScriptManager.WebForms.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.Web.Infrastructure.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\System.Web.Optimization.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\System.Web.Providers.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\WebGrease.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\EntityFramework.SqlServer.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\System.Web.Providers.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.Core.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OAuth.Consumer.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\DotNetOpenAuth.AspNet.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\bin\Microsoft.AspNet.FriendlyUrls.xml
+S:\Intellilearn23june\intelli-learn\intellilearn\obj\Debug\intellilearn.csprojResolveAssemblyReference.cache
+S:\Intellilearn23june\intelli-learn\intellilearn\obj\Debug\intellilearn.dll
+S:\Intellilearn23june\intelli-learn\intellilearn\obj\Debug\intellilearn.pdb

@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IntelliLearn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,700,500" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--stylesheet-->
+
+    <link href="../../CSS/Style.css" rel="stylesheet" />
+    <link href="../../CSS/intellilearn1.css" rel="stylesheet" />
+    <link href="../../CSS/sticky-footer-navbar.css" rel="stylesheet" />
+    <!--Syntax Highlighter-->
+    <!-- Include required JS files -->
+    <script src="../../Syntax%20Highlighter/Scripts/shCore.js"></script>
+
+    <!--
+        At least one brush, here we choose JS. You need to include a brush for every
+        language you want to highlight
+    -->
+    <script src="../../Syntax%20Highlighter/Scripts/shBrushCss.js"></script>
+    <!--<script src="../../Syntax%20Highlighter/Scripts/shBrushCSharp.js"></script>-->
+    <!-- Include *at least* the core style and default theme -->
+    <link href="../../Syntax%20Highlighter/Styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="../../Syntax%20Highlighter/Styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <!--Share FB SDK-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1008469499244689";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!--Share FB SDK Ends-->
+    <!--Share on Twitter SDK Start-->
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    </script>
+    <!--share on Twitter SDK Ends-->
+    <nav id="Header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="padding-left: 10px">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p2 style="font-family:  'Roboto', sans-serif, cursive; font-size:30px; color:white;font-weight:700;text-align:left"><a href="/Index.html" style="color:#fff;">IntelliLearn</a></p2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <!--<li>
+                        <a href="#">Home</a>
+                    </li>-->
+                    <li class="dropdown menu-large">
+                        <a href="../../iOS.html" class="dropdown-toggle" data-toggle="dropdown">iOS<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">iOS Blogs and Videos</li>
+                                    <li><a href="/iOS.html">iOS blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/iOS-Video-Tutorials.html" class="dropdown-content">iOS Videos</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Get-Started.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p style="align-content:center">What You Need to Begin in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Youtube-integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to Integrate Youtube in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Activity-Indicator.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>What is Activity Indicator in iOS</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="Facebook-Integration.html" class="thumbnail"><img src="../../images/iOS-App-Development/ios.jpg" /><p>How to intergrate Facebook in iOS</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Windows.html" class="dropdown-toggle" data-toggle="dropdown">Windows<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs And Videos</li>
+                                    <li><a href="/Windows.html">Windows Blogs</a></li>
+                                    <!--<li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Windows-Video-Tutorials.html" class="dropdown-content">Windows Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/AppBar.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p style="align-content:center">What is AppBar in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/CheckBox.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is CheckBox in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/FilePicker.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>What is FilePicker in Windows</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Windows-App-Development/Navigation-Of-Data.html" class="thumbnail"><img src="../../images/Windows-App-Development/windows21.jpg" /><p>How to navigate data among pages in Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Swift.html" class="dropdown-toggle" data-toggle="dropdown" onclick="changeCategory('Swift')">Swift<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Swift Blogs and Videos</li>
+                                    <li><a href="/Swift.html">Swift Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Swift Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Swift-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Swift-Map.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p style="align-content:center">What is integrate Map in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/Intro-Swift.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>Introduction To Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/TableView.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is Tableview in Swift</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Swift-App-Development/UIAlertview.html" class="thumbnail"><img src="../../images/Swift-App-Development/swift.jpg" /><p>What is UIAlertview in Swift</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="../../Technology.html" class="dropdown-toggle" data-toggle="dropdown">Technology<b class="caret"></b></a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Technology Blogs and Video</li>
+                                    <li><a href="/Technology.html" style="color:black">Technology Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Technology-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                    <li><a href="#" class="dropdown-content">Headers</a></li>
+                                    <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/AppleTV.html" class="thumbnail"><img src="../../images/abs.jpg" /><p style="align-content:center">What is Apple TV</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/iBeacon.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is iBeacon</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/Github.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>How To Make Use of Github for Uploading Project</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Technology/RapChat.html" class="thumbnail"><img src="../../images/abs.jpg" /><p>What is Rapchat</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href=" " class="dropdown-toggle" data-toggle="dropdown">Python<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Python Blogs and Video</li>
+                                    <li><a href="/Python.html">Python Blogs</a></li>
+                                    <!--<li><a href="#">Examples</a></li>
+                                    <li class="divider"></li>-->
+                                    <li class="dropdown-header">Videos</li>
+                                    <li><a href="/Computer-Programming/Video-Tutorials/Python-Video-Tutorials.html" class="dropdown-content">All Video</a></li>
+                                    <!--<li><a href="#" class="dropdown-content">Aligninment options</a></li>
+                                        <li><a href="#" class="dropdown-content">Headers</a></li>
+                                        <li><a href="#" class="dropdown-content">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Dictionary.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p style="align-content:center">What is Dictionary Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Number-Math-Python.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is Number and Math Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Typecasting.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>What is concept of Typecasting in Python</p></a>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <a href="../Python/Working-With-Variable.html" class="thumbnail"><img src="../../images/Python/Python.jpg" /><p>How To Work With Variable In Windows</p></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown menu-large">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b> </a>
+                        <ul class="dropdown-menu megamenu row">
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">All Blogs</li>
+                                    <!--<li><a href="#">Available glyphs</a></li>
+                                    <li class="disabled"><a href="#">How to use</a></li>
+                                    <li><a href="#">Examples</a></li>-->
+                                    <li class="dropdown-header">All Videos</li>
+                                    <!--<li><a href="#">Example</a></li>
+                                    <li><a href="#">Aligninment options</a></li>
+                                    <li><a href="#">Headers</a></li>
+                                    <li><a href="#">Disabled menu items</a></li>-->
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">HTML/CSS</li>
+                                    <li><a href="/Html-CSS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Html5-Css3-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">.Net Framework</li>
+                                    <li><a href="/ASP.NET.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/ASP.NET-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">SQL</li>
+                                    <li><a href="/SQL.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/SQL-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">AngularJS</li>
+                                    <li><a href="/AngularJS.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/AngularJS-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header">Java</li>
+                                    <li><a href="/Java.html">All Blogs</a></li>
+                                    <li class="disabled"><a href="/Computer-Programming/Video-Tutorials/Java-Video-Tutorials.html">All Videos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Intellibase</a>
+                    </li>
+                </ul>
+                <div class="social">
+                    <ul>
+                        <li>
+                        <li><a href="https://www.facebook.com/IntelliLearn-1421998811435252/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/intellirisecorp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid" style="background-color:#ffffff;">
+        <div class="row">
+            <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                <iframe width="500" height="200" src="http://www.youtube.com/embed/1dogXWwkrZ8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <hr>
+            <div class="col-sm-12" style="text-align:center;padding-top:20px">
+                <h1>iOS App Development:Tableview in iOS App Development</h1>
+                <h4>Posted By:<a href="#">Gaurav Saini</a></h4>
+            </div>
+        </div>
+        <ul class="sharing-buttons">
+            <li style="margin-left:10px;">
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fintellilearn.intellirisecorp.com%2FComputer-Programming%2FiOS-App-Development%2FTableview.html&amp;src=sdkpreparse" data-layout="button_count" data-size="small" data-mobile-iframe="true"><i class="fa fa-facebook-square"></i>Share on Facebook</a>
+            </li>
+            <li>
+                <a class="twitter" href="https://twitter.com/share" target="_blank"><i class="fa fa-twitter-square"></i>Tweet</a>
+            </li>
+            <li>
+                <a class="google-plus" href="https://plus.google.com/share?url=http://intellilearn.intellirisecorp.com/Computer-Programming/iOS-App-Development/Tableview.html" target="_blank"><i class="fa fa-google-plus-square"></i>Share on Google+</a>
+            </li>
+        </ul>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8" style="padding-top:30px">
+            <p46>With an idea of Tableview, let’s get our hands dirty and reate a simple Tableview App. Don’t just glance through the article if you’re serious about learning iOS programming. Open your Xcode and code! This is the best way to study programming. Once launched Xcode, create a new project for “Single View application”.</p46>
+            <br />
+            <img src="../../images/iOS-App-Development/ios3.1.png" alt="Tableview in iOS App Development By IntelliLearn" />
+            <br />
+            <h2>Steps</h2>
+            <ul>
+                <li>Launch XCODE and Create New Project</li>
+                <li>Click “Next” to continue. Again, fill in all the required options for the Xcode project:</li>
+                <li>Product Name: SimpleTable – This is the name of your app.</li>
+                <li>Company Identifier: com.appcoda – It’s actually the domain name written the other way round. If you have a domain, you can use your own domain name. Otherwise, you may use mine or just fill in “edu.self”.</li>
+                <li>Class Prefix: SimpleTable – Xcode uses the class prefix to name the class automatically. In future, you may choose your own prefix or even leave it blank. But for this tutorial, let’s keep it simple and use “SimpleTable”.</li>
+                <li>Device Family: iPhone – Just use “iPhone” for this project.</li>
+                <li>Use Storyboards: [unchecked] – Do not select this option. We do not need Storyboards for this simple project.</li>
+                <li>Use Automatic Reference Counting: [checked] – By default, this should be enabled. Just leave it as it is.</li>
+                <li>Include Unit Tests: [unchecked] – Leave this box unchecked. For now, you do not need the unit test class.</li>
+            </ul>
+            <br />
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios3.2.png" class="img-responsive" alt="Simple Tableview App">
+            </div>
+            <br />
+            <p46>Click “Next” to continue. Xcode then asks you where you saves the “SimpleTable” project. Pick any folder (e.g. Desktop) to save your project. As before, deselect the option for Source Control. Click “Create” to continue.</p46>
+            <br />
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios3.3.png" class="img-responsive" alt="Simple Tableview App" />
+            </div>
+            <br />
+            <p46> As you confirm, Xcode automatically creates the “SimpleTable” project based on the options you’ve provided. The resulting screen looks like this:</p46>
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios3.4.png" class="img-responsive" alt="Simple Tableview App">
+            </div>
+            <br />
+            <h2>Designing The View</h2>
+            <p46>First, we’ll create the user interface and add the table view. Select “SimpleTableViewController.xib” to switch to the Interface Builder.</p46>
+            <br />
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios3.5.png" class="img-responsive" alt="Simple Tableview App" />
+            </div>
+            <br />
+            <p46>In the Object Library, select the “Table View” object and drag it into the view. Your screen should look like below after inserting the “Table View”.</p46>
+            <br />
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios3.6.png" class="img-responsive" alt="Simple Tableview App" />
+            </div>
+            <br />
+            <h2>Run The Application</h2>
+            <p46>Before moving on, try to run your app using the Simulator. Click the “Run” button to build your app and test it. Easy, right? You already designed the Table View in your app. For now, however, it doesn’t contain any data. Next up, we’ll write some code to add the table data.</p46>
+            <br />
+            <p46>Go back to the Project Navigator and select<strong>“SimpleTableViewController.h”</strong>. Append<em> “<uitableviewdelegate, uitableviewdatasource>”</em> after<strong>“UIViewController”</strong>. Your code should look like below:</p46>
+            <br />
+            <pre class="brush:css">
+                #import <uikit />UIKit.h>
+                @interface SimpleTableViewController : UIViewController &lt;UITableViewDelegate, UITableViewDataSource&gt;
+                @end
+                 </pre>
+            <br />
+            <p46>The “UITableViewDelegate” and “UITableViewDataSource” are known as protocol in Objective-C. Basically, in order to display data in Table View, we have to conform to the requirements defined in the protocols and implement all the mandatory methods.</p46>
+            <h2>UITableViewDelegate and UITableViewDataSource</h2>
+            <p46>Earlier, we’ve added the “UITableViewDelegate” and “UITableViewDataSource” protocols in the header file. It may be confusing. What’re they? The UITableView, the actual class behind the Table View, is designed to be flexible to handle various types of data. You may display a list of countries or contact names. Or like this example, we’ll use the table view to present a list of recipes. So how do you tell UITableView the list of data to display? UITableViewDataSource is the answer. It’s the link between your data and the table view. The UITableViewDataSource protocol declares two required methods (tableView:cellForRowAtIndexPath and tableView:numberOfRowsInSection) that you have to implement. Through implementing these methods, you tell Table View how many rows to display and the data in each row. UITableViewDelegate, on the other hand, deals with the appearance of the UITableView. Optional methods of the protocols let you manage the height of a table row, configure section headings and footers, re-order table cells, etc. We do not change any of these methods in this example. Let’s leave them for the next tutorial. Next, select “SimpleTableViewController.m” and define an instance variable for holding the table data. </p46>
+            <br />
+            <pre class="brush:css">
+                            @implementation SimpleTableViewController
+                            {
+                            NSArray *tableData;
+                            }
+                </pre>
+            <p46>In the “viewDidLoad” method, add the following code to initialize the “tableData” array. We initialize an array with a list of recipes.</p46>
+            <br />
+            <pre class="brush:css">
+                - (void)viewDidLoad
+                {
+                    [super viewDidLoad];
+                    // Initialize table data
+                    tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+                }
+            </pre>
+            <br />
+            <h2>What is An Array.</h2>
+            <p46>An array is a fundamental data structure in computer programming. You can think of an array as a collection of data elements. Consider the tableData array in the above code, it represents a collection of textual elements. Each of the array elements is identified or accessed by an index. An array with 10 elements will have indices from 0 to 9. That means, tableData[0] returns the first element of the “tableData” array. In Objective C, NSArray is the class for creating and managing array. You can use NSArray to create static array for which the size is fixed. If you need a dynamic array, use NSMutableArray instead. NSArray offers a set of factory methods to create an array object. In our code, we use “arrayWithObjects” to instantiate a NSArray object and preload it with the specific elements (e.g. Hamburger). You can also use other built-in methods to query and manage the array. Later, we’ll invoke the “count” method to query the number of data elements in the array. To learn more about the usage of NSArray, you can always refer to Apple’s official document. Finally, we have to add two datasource methods: “tableView:numberOfRowsInSection” and “tableView:cellForRowAtIndexPath”. These two methods are part of the UITableViewDataSource protocol. It’s mandatory to implement the methods when configuring a UITableView. The first method is used to inform the table view how many rows are in the section. So let’s add the below code. The “count” method simply returns the number of items in the “tableData” array.</p46>
+            <pre class="brush:css">
+            - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+            {
+                return [tableData count];
+            }
+            </pre>
+            <p46>Next, we implement the other required methods.</p46>
+            <br />
+            <pre class="brush:css">
+            - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+            {
+                static NSString *simpleTableIdentifier = @"SimpleTableItem";
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+                if (cell == nil) {
+                    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+                }
+                cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+                return cell;
+            }
+            </pre>
+            <br />
+            <p46>The “cellForRowAtIndexPath” is called every time when a table row is displayed. The below illustration will give you a better understanding about how UITableView and UITableDataSource work.</p46>
+            <br />
+            <h2>Connecting the Datasaource and Delegate</h2>
+            <p46>Like the “Hello World” button in the first tutorial, we have to establish the connection between the Table View and the two methods we just created. Go back to the “SimpleTableViewController.xib”. Press and hold the Control key on your keyboard, select the Table View and drag to the “File’s Owner”.</p46>
+            <p46>Release both buttons and a pop-up shows both “dataSource” & “delegate”. Select “dataSource” to make a connection between the Table View and its data source. Repeat the above steps and make a connection with the delegate. That’s it. To ensure the connections are linked properly, you can select the Table View again. In the upper part of the Utility area, you can reveal the existing connections in the “Connection Inspector” (i.e. the rightmost tab).</p46>
+            <br />
+            <h2>Add Thumnail to your Tableview</h2>
+            <p46>The table view is too plain, right? What about adding an image to each row? The iOS SDK makes it extremely easy to do this. You just need to add a line of code for inserting a thumbnail for each row. First, download this sample image. Alternatively, you can use your own image but make sure you name it “creme_brulee.jpg”. In Project Navigator, right-click the “SimplyTable” folder and select “Add Files to SimpleTable…”.</p46>
+            <br />
+            <div class="zoomin">
+                <img src="../../images/iOS-App-Development/ios3.8.png" class="img-responsive" alt="Tableview in iOS App By IntelliLearn.">
+            </div>
+            <br />
+            <p46>Select the image file and check “Copy items to destination group’s folder” checkbox. Click “OK” to add the file. Now edit the “SimpleTableViewController.m” and add the following line of code in “tableView:cellForRowAtIndexPath” method:</p46>
+            <pre class="brush:css">
+            cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
+            </pre>
+            <p46>Now You can Run the code</p46>
+            <br />
+            <img src="../../images/iOS-App-Development/ios3.11.png" alt="Tableview App" />
+            <br />
+        </div>
+        <div class="col-sm-2">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- IntelliLearnNewad -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:200px;height:600px"
+                 data-ad-client="ca-pub-7832718248071183"
+                 data-ad-slot="6528729151"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="col-sm-12" align="center" style="padding-bottom:50px;padding-top:70px">
+            <p47>Hope You Like This Part Of Coding.Stay Tuned To <p48><i>www.Intellilearn.in</i></p48> For More Blogs.</p47>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <section data-widget="footer" class="tgpfooter clearfix">
+            <div class="container clearfix">
+                <h2>Our Events</h2>
+                <div class="container">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="../../images/Events/0.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/1.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/2.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/3.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/4.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/5.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/7.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/8.png" />
+                            </div>
+                            <div class="item">
+                                <img src="../../images/Events/9.png" />
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <p class="copyright">Copyright @ 2016.IntelliRise Tech Solutions. All rights reserved.For reprint rights. Intellilearn.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Navbar fixed bottom -->
+    <script>
+        // Dropdown Menu Fade
+        jQuery(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop().fadeIn("fast");
+                },
+                function () {
+                    $('.dropdown-menu', this).stop().fadeOut("fast");
+                });
+        });
+    </script>
+</body>
+</html>

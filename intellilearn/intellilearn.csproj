@@ -1,0 +1,1240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02A24450-C4F6-43C3-A213-D4E9A030D311}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>intellilearn</RootNamespace>
+    <AssemblyName>intellilearn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.2.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=_FriendlyUrlsVersion__.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="AngularJS.html" />
+    <Content Include="ASP.NET.html" />
+    <Content Include="Computer-Programming\.NET Framework\Access Control.html" />
+    <Content Include="Computer-Programming\.NET Framework\Intro-ASP.NET.html" />
+    <Content Include="Computer-Programming\.NET Framework\State-management.html" />
+    <Content Include="Computer-Programming\.NET Framework\Webform-Control-Property.html" />
+    <Content Include="Computer-Programming\.NET Framework\Webform-Server-Control.html" />
+    <Content Include="Computer-Programming\.NET Framework\Webform-With-Master-Page.html" />
+    <Content Include="Computer-Programming\.NET Framework\Webforms.html" />
+    <Content Include="Computer-Programming\AngularJS\Intro-AngularJS.html" />
+    <Content Include="Computer-Programming\AngularJS\Creating-Custom-Element.html" />
+    <Content Include="Computer-Programming\AngularJS\Getting-Started.html" />
+    <Content Include="Computer-Programming\AngularJS\JS-Controller.html" />
+    <Content Include="Computer-Programming\AngularJS\JS-DataBinding.html" />
+    <Content Include="Computer-Programming\AngularJS\JS-Expression.html" />
+    <Content Include="Computer-Programming\AngularJS\JS-Feature.html" />
+    <Content Include="Computer-Programming\AngularJS\JS-Filled.html" />
+    <Content Include="Computer-Programming\AngularJS\JS-Filters.html" />
+    <Content Include="Computer-Programming\HTML-CSS\2D-Transformation-in-CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\3D-Transformation-in CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Additional-Tags-in-HTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Background-In-CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Buttons-in-CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Charset-in-HTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Different-Versions.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Doctype-Decleration.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Example.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Elements-in-HTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Form-Elements-in-HTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Geolocation.html" />
+    <Content Include="Computer-Programming\HTML-CSS\How-To-Use-CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\HTML Canvas.html" />
+    <Content Include="Computer-Programming\HTML-CSS\HTML-Forms.html" />
+    <Content Include="Computer-Programming\HTML-CSS\HTML-SVG.html" />
+    <Content Include="Computer-Programming\HTML-CSS\HTML-Vs-XHTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\HTMLCanvas-Vs-SVG.html" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Add-Space-Pagination.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Bordered-Pagination.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Pagination-With-Hover.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Pagination.png" />
+    <Content Include="images\HtmlorCSS\intelliLearn-rounded-corner-image.png" />
+    <Content Include="Computer-Programming\HTML-CSS\Pagination-in-CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Rounded-Corner-in-CSS3.html" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Article-Tag.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-background-Image.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-background-Image2.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Button-in-CSS.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-button-with-Different-Size.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Buttons-With-border-Color.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Circular-Buttons.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Figcaption-Tag.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-image-with-Contain-keyword.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-image-With-Cover-keyword.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Link.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Nav-Tag.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Normal-Disabled-Buttons.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Section-tag.png" />
+    <Content Include="Computer-Programming\HTML-CSS\IntroHTML5.html" />
+    <Content Include="Computer-Programming\HTML-CSS\iFrame.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Layout.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Links.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Local-Storage.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Multimedia.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Shadows-in-CSS3.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Supplymentary-tags.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Tags.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Textcards-and-ImageCard-in-HTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\Transtions-in-HTML.html" />
+    <Content Include="Computer-Programming\HTML-CSS\URL-encoding.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Activity-Indicator.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Alertview.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\AutoLayout.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Custom-Delegate.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Date-Time-Picker.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Delete-Row.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Facebook-Integration.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Gestures.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Github.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Hello-World.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Get-Started.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\iOS9.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Localytics.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Mapview.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\NSFetchRequestController.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\PageController.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Progress-Bar.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Tableview.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\UI Slider.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Webservices.html" />
+    <Content Include="Computer-Programming\iOS-App-Development\Youtube-integration.html" />
+    <Content Include="Computer-Programming\Java-App-Development\Get-Started-In-Java.html" />
+    <Content Include="Computer-Programming\Java-App-Development\Intro-Java.html" />
+    <Content Include="Computer-Programming\Java-App-Development\OOP%27S-Concept.html" />
+    <Content Include="Computer-Programming\Java-App-Development\SourceCode.html" />
+    <Content Include="Computer-Programming\Python\Dictionary.html" />
+    <Content Include="Computer-Programming\Python\Number-Math-Python.html" />
+    <Content Include="Computer-Programming\Python\Sequences.html" />
+    <Content Include="Computer-Programming\Python\Slicing.html" />
+    <Content Include="Computer-Programming\Python\Typecasting.html" />
+    <Content Include="Computer-Programming\Python\Working-With-String.html" />
+    <Content Include="Computer-Programming\Python\Working-With-Variable.html" />
+    <Content Include="Computer-Programming\SQL\Classification.html" />
+    <Content Include="Computer-Programming\SQL\DataModel.html" />
+    <Content Include="Computer-Programming\SQL\Strutured-Query-Language.html" />
+    <Content Include="Computer-Programming\Swift-App-Development\Hello-World.html" />
+    <Content Include="Computer-Programming\Swift-App-Development\Swift-Map.html" />
+    <Content Include="Computer-Programming\Swift-App-Development\Intro-Swift.html" />
+    <Content Include="Computer-Programming\Swift-App-Development\TableView.html" />
+    <Content Include="Computer-Programming\Swift-App-Development\UIAlertview.html" />
+    <Content Include="Computer-Programming\Technology\AppleTV.html" />
+    <Content Include="Computer-Programming\Technology\Digital-World.html" />
+    <Content Include="Computer-Programming\Technology\FourSquare.html" />
+    <Content Include="Computer-Programming\Technology\Github.html" />
+    <Content Include="Computer-Programming\Technology\GoogleTrends.html" />
+    <Content Include="Computer-Programming\Technology\iBeacon.html" />
+    <Content Include="Computer-Programming\Technology\Instagram-Update.html" />
+    <Content Include="Computer-Programming\Technology\Microsoft-Cognative-Services.html" />
+    <Content Include="Computer-Programming\Technology\PageSpeed.html" />
+    <Content Include="Computer-Programming\Technology\PinchWorm.html" />
+    <Content Include="Computer-Programming\Technology\Powershell-Depth-Into-Pipeline.html" />
+    <Content Include="Computer-Programming\Technology\Powershell.html" />
+    <Content Include="Computer-Programming\Technology\RapChat.html" />
+    <Content Include="Computer-Programming\Technology\Reddit.html" />
+    <Content Include="Computer-Programming\Technology\Snapchat-Discovers.html" />
+    <Content Include="Computer-Programming\Technology\VirtualBox.html" />
+    <Content Include="Computer-Programming\Technology\XBOX.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\AngularJS-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\Html5-Css3-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\iOS-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\Java-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\Python-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\SQL-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\Swift-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\Technology-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\Windows-Video-Tutorials.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\AppBar.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\CheckBox.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Date-Time-Picker.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\FilePicker.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\FlipView.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Get-and-Set.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Gridview.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\HyperLink.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Introduction.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Media-Elements.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Navigation-Of-Data.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Playing-With-Image.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\SearchBar.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Splash-Screen.html" />
+    <Content Include="Computer-Programming\Windows-App-Development\Windows8-8.1-and-Differences.html" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="CSS\Intellilearn1.css" />
+    <Content Include="CSS\sticky-footer-navbar.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Html-CSS.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="images\abs.jpg" />
+    <Content Include="images\angular.jpg" />
+    <Content Include="images\angularjsgoogle.png" />
+    <Content Include="images\AngularJS\Angular.png" />
+    <Content Include="images\AngularJS\AngularDataBindingTextBoxToLabel.png" />
+    <Content Include="images\AngularJS\AngularDataBindingTextBoxToLabeloutput.png" />
+    <Content Include="images\AngularJS\AngularExpInput.png" />
+    <Content Include="images\AngularJS\AngularExpOutput.png" />
+    <Content Include="images\AngularJS\angularjs12.png" />
+    <Content Include="images\AngularJS\AngularJsControllersInput.png" />
+    <Content Include="images\AngularJS\AngularJsControllersOutput.png" />
+    <Content Include="images\AngularJS\angularsite.png" />
+    <Content Include="images\AngularJS\angularversion.png" />
+    <Content Include="images\AngularJS\AngulasJsFiltersInput.png" />
+    <Content Include="images\AngularJS\AngulasJsFiltersOutput.png" />
+    <Content Include="images\AngularJS\ChangingDOMInput.png" />
+    <Content Include="images\AngularJS\ChangingDOMOutput1.png" />
+    <Content Include="images\AngularJS\ChangingDOMOutput2.png" />
+    <Content Include="images\AngularJS\Controllers.png" />
+    <Content Include="images\AngularJS\custom.png" />
+    <Content Include="images\AngularJS\CustomElementsAttributeInput.png" />
+    <Content Include="images\AngularJS\CustomElementsAttributeOutput1.png" />
+    <Content Include="images\AngularJS\CustomElementsAttributeOutput2.png" />
+    <Content Include="images\AngularJS\CustomFiltersInput.png" />
+    <Content Include="images\AngularJS\CustomFiltersOutput.png" />
+    <Content Include="images\AngularJS\customhtml.png" />
+    <Content Include="images\AngularJS\data2.png" />
+    <Content Include="images\AngularJS\databinding.png" />
+    <Content Include="images\AngularJS\DataBindingRepeatInnput.png" />
+    <Content Include="images\AngularJS\DataBindingRepeatOutput.png" />
+    <Content Include="images\AngularJS\DOM.png" />
+    <Content Include="images\AngularJS\expression.png" />
+    <Content Include="images\AngularJS\feature.png" />
+    <Content Include="images\AngularJS\filters.png" />
+    <Content Include="images\AngularJS\Intro.png" />
+    <Content Include="images\AngularJS\Iterative.png" />
+    <Content Include="images\AngularJS\Slicing1.png" />
+    <Content Include="images\AngularJS\start.png" />
+    <Content Include="images\AngularJS\View.png" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\Coming-Soon.jpg" />
+    <Content Include="images\documenting-pen.jpg" />
+    <Content Include="images\Events\0.png" />
+    <Content Include="images\Events\1.png" />
+    <Content Include="images\Events\2.png" />
+    <Content Include="images\Events\3.png" />
+    <Content Include="images\Events\4.png" />
+    <Content Include="images\Events\5.png" />
+    <Content Include="images\Events\6.png" />
+    <Content Include="images\Events\7.png" />
+    <Content Include="images\Events\8.png" />
+    <Content Include="images\Events\9.png" />
+    <Content Include="images\google-trends.jpg" />
+    <Content Include="images\healthcare-technology-8-04-2015.jpg" />
+    <Content Include="images\home-banner-two-new.jpg" />
+    <Content Include="images\html-css.jpg" />
+    <Content Include="images\html52.jpg" />
+    <Content Include="images\HtmlorCSS\hmtl12.png" />
+    <Content Include="images\HtmlorCSS\hmtl7.png" />
+    <Content Include="images\HtmlorCSS\Html1.png" />
+    <Content Include="images\HtmlorCSS\html10.png" />
+    <Content Include="images\HtmlorCSS\html1001.png" />
+    <Content Include="images\HtmlorCSS\html101.png" />
+    <Content Include="images\HtmlorCSS\html11.png" />
+    <Content Include="images\HtmlorCSS\html110.png" />
+    <Content Include="images\HtmlorCSS\html120.png" />
+    <Content Include="images\HtmlorCSS\html13.png" />
+    <Content Include="images\HtmlorCSS\html130.png" />
+    <Content Include="images\HtmlorCSS\html14.png" />
+    <Content Include="images\HtmlorCSS\html140.png" />
+    <Content Include="images\HtmlorCSS\Html2.png" />
+    <Content Include="images\HtmlorCSS\html201.png" />
+    <Content Include="images\HtmlorCSS\html3.png" />
+    <Content Include="images\HtmlorCSS\html301.png" />
+    <Content Include="images\HtmlorCSS\html4.png" />
+    <Content Include="images\HtmlorCSS\html401.png" />
+    <Content Include="images\HtmlorCSS\html5.png" />
+    <Content Include="images\HtmlorCSS\html501.png" />
+    <Content Include="images\HtmlorCSS\html6.png" />
+    <Content Include="images\HtmlorCSS\html601.png" />
+    <Content Include="images\HtmlorCSS\html701.png" />
+    <Content Include="images\HtmlorCSS\html8.png" />
+    <Content Include="images\HtmlorCSS\html801.png" />
+    <Content Include="images\HtmlorCSS\html9.png" />
+    <Content Include="images\HtmlorCSS\html901.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-2D-Transform-Matrix-Method.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-2D-Transform-Rotate-Method.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-2D-Transform-Scale-Method.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-2D-Transform-Skew-Method.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-2D-Transform-Translate-Methord.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-3D-Transform-RotateX.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-3D-Transform-RotateY.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-3D-Transform-RotateZ.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Blurred-Box-Shadow.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Box Shadow.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Button-Click-Pop-Up.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-dataList.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Dropdown-Select.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Hover-With-input-List.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-Image-Card.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Input-Radio-Button.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-Input-Type-Checkbox.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Input-Type-Submit.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Input-Type-Textbox.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Text-Shadow-Effect-Blue.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Text-Shadow-Effect-Yellow.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-Textarea-With-Button.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-Textarea.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-TextCard.png" />
+    <Content Include="images\HtmlorCSS\IntelliLearn-TextShadow-Effects.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-Transtion-After-Hover.png" />
+    <Content Include="images\HtmlorCSS\Intellilearn-Transtion-before-Hover.png" />
+    <Content Include="images\image-7.png" />
+    <Content Include="images\iOS-App-Development\cust1.png" />
+    <Content Include="images\iOS-App-Development\cust2.png" />
+    <Content Include="images\iOS-App-Development\cust3.png" />
+    <Content Include="images\iOS-App-Development\githu14.png" />
+    <Content Include="images\iOS-App-Development\github1.png" />
+    <Content Include="images\iOS-App-Development\github10.png" />
+    <Content Include="images\iOS-App-Development\github11.png" />
+    <Content Include="images\iOS-App-Development\github12.png" />
+    <Content Include="images\iOS-App-Development\github13.png" />
+    <Content Include="images\iOS-App-Development\github15.png" />
+    <Content Include="images\iOS-App-Development\github16.png" />
+    <Content Include="images\iOS-App-Development\github17.png" />
+    <Content Include="images\iOS-App-Development\github2.png" />
+    <Content Include="images\iOS-App-Development\github3.png" />
+    <Content Include="images\iOS-App-Development\github4.png" />
+    <Content Include="images\iOS-App-Development\github5.png" />
+    <Content Include="images\iOS-App-Development\Github6.png" />
+    <Content Include="images\iOS-App-Development\github7.png" />
+    <Content Include="images\iOS-App-Development\github8.png" />
+    <Content Include="images\iOS-App-Development\github9.png" />
+    <Content Include="images\iOS-App-Development\hdr.png" />
+    <Content Include="images\iOS-App-Development\ios.jpg" />
+    <Content Include="images\iOS-App-Development\ios1.1.png" />
+    <Content Include="images\iOS-App-Development\ios1.2.png" />
+    <Content Include="images\iOS-App-Development\ios1.3.png" />
+    <Content Include="images\iOS-App-Development\ios1.4.png" />
+    <Content Include="images\iOS-App-Development\ios10.1.png" />
+    <Content Include="images\iOS-App-Development\ios10.2.png" />
+    <Content Include="images\iOS-App-Development\ios11.1.png" />
+    <Content Include="images\iOS-App-Development\ios11.10.png" />
+    <Content Include="images\iOS-App-Development\ios11.11.png" />
+    <Content Include="images\iOS-App-Development\ios11.12.png" />
+    <Content Include="images\iOS-App-Development\ios11.13.png" />
+    <Content Include="images\iOS-App-Development\ios11.14.png" />
+    <Content Include="images\iOS-App-Development\ios11.15.png" />
+    <Content Include="images\iOS-App-Development\ios11.16.png" />
+    <Content Include="images\iOS-App-Development\ios11.17.png" />
+    <Content Include="images\iOS-App-Development\ios11.18.png" />
+    <Content Include="images\iOS-App-Development\ios11.19.png" />
+    <Content Include="images\iOS-App-Development\ios11.2.png" />
+    <Content Include="images\iOS-App-Development\ios11.20.png" />
+    <Content Include="images\iOS-App-Development\ios11.21.png" />
+    <Content Include="images\iOS-App-Development\ios11.22.png" />
+    <Content Include="images\iOS-App-Development\ios11.23.png" />
+    <Content Include="images\iOS-App-Development\ios11.24.png" />
+    <Content Include="images\iOS-App-Development\ios11.25.png" />
+    <Content Include="images\iOS-App-Development\ios11.26.png" />
+    <Content Include="images\iOS-App-Development\ios11.27.png" />
+    <Content Include="images\iOS-App-Development\ios11.28.png" />
+    <Content Include="images\iOS-App-Development\ios11.29.png" />
+    <Content Include="images\iOS-App-Development\ios11.3.png" />
+    <Content Include="images\iOS-App-Development\ios11.4.png" />
+    <Content Include="images\iOS-App-Development\ios11.5.png" />
+    <Content Include="images\iOS-App-Development\ios11.6.png" />
+    <Content Include="images\iOS-App-Development\ios11.7.png" />
+    <Content Include="images\iOS-App-Development\ios11.8.png" />
+    <Content Include="images\iOS-App-Development\ios11.9.png" />
+    <Content Include="images\iOS-App-Development\ios12.1.png" />
+    <Content Include="images\iOS-App-Development\ios12.2.png" />
+    <Content Include="images\iOS-App-Development\ios12.3.png" />
+    <Content Include="images\iOS-App-Development\ios12.4.png" />
+    <Content Include="images\iOS-App-Development\ios12.5.png" />
+    <Content Include="images\iOS-App-Development\ios13.1.png" />
+    <Content Include="images\iOS-App-Development\ios13.2.png" />
+    <Content Include="images\iOS-App-Development\ios13.3.png" />
+    <Content Include="images\iOS-App-Development\ios13.4.png" />
+    <Content Include="images\iOS-App-Development\ios13.5.png" />
+    <Content Include="images\iOS-App-Development\ios13.6.png" />
+    <Content Include="images\iOS-App-Development\ios14.1.png" />
+    <Content Include="images\iOS-App-Development\ios14.2.png" />
+    <Content Include="images\iOS-App-Development\ios14.3.png" />
+    <Content Include="images\iOS-App-Development\ios14.4.png" />
+    <Content Include="images\iOS-App-Development\ios14.5.png" />
+    <Content Include="images\iOS-App-Development\ios15.1.png" />
+    <Content Include="images\iOS-App-Development\ios15.2.png" />
+    <Content Include="images\iOS-App-Development\ios15.3.png" />
+    <Content Include="images\iOS-App-Development\ios15.4.png" />
+    <Content Include="images\iOS-App-Development\ios15.5.png" />
+    <Content Include="images\iOS-App-Development\ios15.6.png" />
+    <Content Include="images\iOS-App-Development\ios16.1.png" />
+    <Content Include="images\iOS-App-Development\ios16.2.png" />
+    <Content Include="images\iOS-App-Development\ios16.3.png" />
+    <Content Include="images\iOS-App-Development\ios17.1.png" />
+    <Content Include="images\iOS-App-Development\ios17.2.png" />
+    <Content Include="images\iOS-App-Development\ios17.3.png" />
+    <Content Include="images\iOS-App-Development\ios18.1.png" />
+    <Content Include="images\iOS-App-Development\ios18.2.png" />
+    <Content Include="images\iOS-App-Development\ios18.3.png" />
+    <Content Include="images\iOS-App-Development\ios19.1.png" />
+    <Content Include="images\iOS-App-Development\ios19.2.png" />
+    <Content Include="images\iOS-App-Development\ios19.3.png" />
+    <Content Include="images\iOS-App-Development\ios19.4.png" />
+    <Content Include="images\iOS-App-Development\ios19.5.png" />
+    <Content Include="images\iOS-App-Development\ios19.6.png" />
+    <Content Include="images\iOS-App-Development\ios20.1.png" />
+    <Content Include="images\iOS-App-Development\ios20.2.png" />
+    <Content Include="images\iOS-App-Development\ios20.3.png" />
+    <Content Include="images\iOS-App-Development\ios20.4.png" />
+    <Content Include="images\iOS-App-Development\iOS203.png" />
+    <Content Include="images\iOS-App-Development\ios21.1.png" />
+    <Content Include="images\iOS-App-Development\ios21.2.png" />
+    <Content Include="images\iOS-App-Development\ios21.3.png" />
+    <Content Include="images\iOS-App-Development\ios21.4.png" />
+    <Content Include="images\iOS-App-Development\ios22.1.png" />
+    <Content Include="images\iOS-App-Development\ios22.2.png" />
+    <Content Include="images\iOS-App-Development\ios22.3.png" />
+    <Content Include="images\iOS-App-Development\ios22.4.png" />
+    <Content Include="images\iOS-App-Development\ios23.1.png" />
+    <Content Include="images\iOS-App-Development\ios23.2.png" />
+    <Content Include="images\iOS-App-Development\ios23.3.png" />
+    <Content Include="images\iOS-App-Development\ios23.4.png" />
+    <Content Include="images\iOS-App-Development\ios23.5.png" />
+    <Content Include="images\iOS-App-Development\ios24.1.png" />
+    <Content Include="images\iOS-App-Development\ios24.2.png" />
+    <Content Include="images\iOS-App-Development\ios24.3.png" />
+    <Content Include="images\iOS-App-Development\ios24.4.png" />
+    <Content Include="images\iOS-App-Development\ios24.5.png" />
+    <Content Include="images\iOS-App-Development\ios25.1.png" />
+    <Content Include="images\iOS-App-Development\ios25.2.png" />
+    <Content Include="images\iOS-App-Development\ios26.1.png" />
+    <Content Include="images\iOS-App-Development\ios26.10.png" />
+    <Content Include="images\iOS-App-Development\ios26.11.png" />
+    <Content Include="images\iOS-App-Development\ios26.12.png" />
+    <Content Include="images\iOS-App-Development\ios26.13.png" />
+    <Content Include="images\iOS-App-Development\ios26.14.png" />
+    <Content Include="images\iOS-App-Development\ios26.15.png" />
+    <Content Include="images\iOS-App-Development\ios26.16.png" />
+    <Content Include="images\iOS-App-Development\ios26.2.png" />
+    <Content Include="images\iOS-App-Development\ios26.3.png" />
+    <Content Include="images\iOS-App-Development\ios26.4.png" />
+    <Content Include="images\iOS-App-Development\ios26.5.png" />
+    <Content Include="images\iOS-App-Development\ios26.6.png" />
+    <Content Include="images\iOS-App-Development\ios26.7.png" />
+    <Content Include="images\iOS-App-Development\ios26.8.png" />
+    <Content Include="images\iOS-App-Development\ios26.9.png" />
+    <Content Include="images\iOS-App-Development\iOS262.png" />
+    <Content Include="images\iOS-App-Development\ios27..png" />
+    <Content Include="images\iOS-App-Development\ios27.1.png" />
+    <Content Include="images\iOS-App-Development\ios27.2.png" />
+    <Content Include="images\iOS-App-Development\ios27.3.png" />
+    <Content Include="images\iOS-App-Development\ios27.4.png" />
+    <Content Include="images\iOS-App-Development\ios27.5.png" />
+    <Content Include="images\iOS-App-Development\ios27.6.png" />
+    <Content Include="images\iOS-App-Development\ios27.7.png" />
+    <Content Include="images\iOS-App-Development\ios28.1.png" />
+    <Content Include="images\iOS-App-Development\ios28.2.png" />
+    <Content Include="images\iOS-App-Development\ios29.1.png" />
+    <Content Include="images\iOS-App-Development\ios29.10.png" />
+    <Content Include="images\iOS-App-Development\ios29.11.png" />
+    <Content Include="images\iOS-App-Development\ios29.12.png" />
+    <Content Include="images\iOS-App-Development\ios29.13.png" />
+    <Content Include="images\iOS-App-Development\ios29.14.png" />
+    <Content Include="images\iOS-App-Development\ios29.2.png" />
+    <Content Include="images\iOS-App-Development\ios29.3.png" />
+    <Content Include="images\iOS-App-Development\ios29.4.png" />
+    <Content Include="images\iOS-App-Development\ios29.5.png" />
+    <Content Include="images\iOS-App-Development\ios29.6.png" />
+    <Content Include="images\iOS-App-Development\ios29.7.png" />
+    <Content Include="images\iOS-App-Development\ios29.8.png" />
+    <Content Include="images\iOS-App-Development\ios29.9.png" />
+    <Content Include="images\iOS-App-Development\ios3.1.png" />
+    <Content Include="images\iOS-App-Development\ios3.10.png" />
+    <Content Include="images\iOS-App-Development\ios3.11.png" />
+    <Content Include="images\iOS-App-Development\ios3.12.png" />
+    <Content Include="images\iOS-App-Development\ios3.13.png" />
+    <Content Include="images\iOS-App-Development\ios3.14.png" />
+    <Content Include="images\iOS-App-Development\ios3.15.png" />
+    <Content Include="images\iOS-App-Development\ios3.16.png" />
+    <Content Include="images\iOS-App-Development\ios3.17.png" />
+    <Content Include="images\iOS-App-Development\ios3.18.png" />
+    <Content Include="images\iOS-App-Development\ios3.19.png" />
+    <Content Include="images\iOS-App-Development\ios3.2.png" />
+    <Content Include="images\iOS-App-Development\ios3.3.png" />
+    <Content Include="images\iOS-App-Development\ios3.4.png" />
+    <Content Include="images\iOS-App-Development\ios3.5.png" />
+    <Content Include="images\iOS-App-Development\ios3.6.png" />
+    <Content Include="images\iOS-App-Development\ios3.7.png" />
+    <Content Include="images\iOS-App-Development\ios3.8.png" />
+    <Content Include="images\iOS-App-Development\ios3.9.png" />
+    <Content Include="images\iOS-App-Development\ios30.1.png" />
+    <Content Include="images\iOS-App-Development\ios30.10.png" />
+    <Content Include="images\iOS-App-Development\ios30.11.png" />
+    <Content Include="images\iOS-App-Development\ios30.2.png" />
+    <Content Include="images\iOS-App-Development\ios30.3.png" />
+    <Content Include="images\iOS-App-Development\ios30.4.png" />
+    <Content Include="images\iOS-App-Development\ios30.5.png" />
+    <Content Include="images\iOS-App-Development\ios30.6.png" />
+    <Content Include="images\iOS-App-Development\ios30.7.png" />
+    <Content Include="images\iOS-App-Development\ios30.8.png" />
+    <Content Include="images\iOS-App-Development\ios30.9.png" />
+    <Content Include="images\iOS-App-Development\iOS368.png" />
+    <Content Include="images\iOS-App-Development\ios4.1.png" />
+    <Content Include="images\iOS-App-Development\ios4.2.png" />
+    <Content Include="images\iOS-App-Development\ios5.1.png" />
+    <Content Include="images\iOS-App-Development\ios5.10.png" />
+    <Content Include="images\iOS-App-Development\ios5.11.png" />
+    <Content Include="images\iOS-App-Development\ios5.12.png" />
+    <Content Include="images\iOS-App-Development\ios5.13.png" />
+    <Content Include="images\iOS-App-Development\ios5.14.png" />
+    <Content Include="images\iOS-App-Development\ios5.15.png" />
+    <Content Include="images\iOS-App-Development\ios5.16.png" />
+    <Content Include="images\iOS-App-Development\ios5.17.png" />
+    <Content Include="images\iOS-App-Development\ios5.2.png" />
+    <Content Include="images\iOS-App-Development\ios5.3.png" />
+    <Content Include="images\iOS-App-Development\ios5.4.png" />
+    <Content Include="images\iOS-App-Development\ios5.5.png" />
+    <Content Include="images\iOS-App-Development\ios5.6.png" />
+    <Content Include="images\iOS-App-Development\ios5.7.png" />
+    <Content Include="images\iOS-App-Development\ios5.8.png" />
+    <Content Include="images\iOS-App-Development\ios5.9.png" />
+    <Content Include="images\iOS-App-Development\ios6.1.png" />
+    <Content Include="images\iOS-App-Development\ios6.10.png" />
+    <Content Include="images\iOS-App-Development\ios6.11.png" />
+    <Content Include="images\iOS-App-Development\ios6.2.png" />
+    <Content Include="images\iOS-App-Development\ios6.3.png" />
+    <Content Include="images\iOS-App-Development\ios6.4.png" />
+    <Content Include="images\iOS-App-Development\ios6.5.png" />
+    <Content Include="images\iOS-App-Development\ios6.6.png" />
+    <Content Include="images\iOS-App-Development\ios6.7.png" />
+    <Content Include="images\iOS-App-Development\ios6.8.png" />
+    <Content Include="images\iOS-App-Development\ios6.9.png" />
+    <Content Include="images\iOS-App-Development\ios7.1.png" />
+    <Content Include="images\iOS-App-Development\ios7.2.png" />
+    <Content Include="images\iOS-App-Development\ios7.3.png" />
+    <Content Include="images\iOS-App-Development\ios8.1.png" />
+    <Content Include="images\iOS-App-Development\ios8.10.png" />
+    <Content Include="images\iOS-App-Development\ios8.11.png" />
+    <Content Include="images\iOS-App-Development\ios8.12.png" />
+    <Content Include="images\iOS-App-Development\ios8.2.png" />
+    <Content Include="images\iOS-App-Development\ios8.3.png" />
+    <Content Include="images\iOS-App-Development\ios8.4.png" />
+    <Content Include="images\iOS-App-Development\ios8.5.png" />
+    <Content Include="images\iOS-App-Development\ios8.6.png" />
+    <Content Include="images\iOS-App-Development\ios8.7.png" />
+    <Content Include="images\iOS-App-Development\ios8.8.png" />
+    <Content Include="images\iOS-App-Development\ios8.9.png" />
+    <Content Include="images\iOS-App-Development\ios9.1.png" />
+    <Content Include="images\iOS-App-Development\ios9.2.png" />
+    <Content Include="images\iOS-App-Development\ios9.3.png" />
+    <Content Include="images\iOS-App-Development\ios9.4.png" />
+    <Content Include="images\iOS-App-Development\ios9.5.png" />
+    <Content Include="images\iOS-App-Development\iOSnew.png" />
+    <Content Include="images\iOS-App-Development\local1.png" />
+    <Content Include="images\iOS-App-Development\local10.png" />
+    <Content Include="images\iOS-App-Development\local11.png" />
+    <Content Include="images\iOS-App-Development\local12.png" />
+    <Content Include="images\iOS-App-Development\local13.png" />
+    <Content Include="images\iOS-App-Development\local14.png" />
+    <Content Include="images\iOS-App-Development\local15.png" />
+    <Content Include="images\iOS-App-Development\local2.png" />
+    <Content Include="images\iOS-App-Development\local3.png" />
+    <Content Include="images\iOS-App-Development\local4.png" />
+    <Content Include="images\iOS-App-Development\local5.png" />
+    <Content Include="images\iOS-App-Development\local6.png" />
+    <Content Include="images\iOS-App-Development\local7.png" />
+    <Content Include="images\iOS-App-Development\local9.png" />
+    <Content Include="images\iOS-App-Development\NSfecthoimage3.png" />
+    <Content Include="images\iOS-App-Development\NSfecthoimage4.png" />
+    <Content Include="images\iOS-App-Development\NSfecthoimage5.png" />
+    <Content Include="images\iOS-App-Development\NSfecthoimage6.png" />
+    <Content Include="images\iOS-App-Development\NSfecthoimage7.png" />
+    <Content Include="images\iOS-App-Development\nsfetchoimage1.png" />
+    <Content Include="images\iOS-App-Development\NSFetchRequest2.png" />
+    <Content Include="images\iOS-App-Development\nsnotification1.png" />
+    <Content Include="images\iOS-App-Development\nsnotification2.png" />
+    <Content Include="images\iOS-App-Development\nsnotification3.png" />
+    <Content Include="images\iOS-App-Development\youtube1.png" />
+    <Content Include="images\iOS-App-Development\youtube2.png" />
+    <Content Include="images\iOS-App-Development\youtube3.png" />
+    <Content Include="images\iOS-App-Development\youtube4.png" />
+    <Content Include="images\iOS-App-Development\youtube5.png" />
+    <Content Include="images\iOS-App-Development\youtube6.png" />
+    <Content Include="images\iOS-App-Development\youtube7.png" />
+    <Content Include="images\iOS-App-Development\youtube8.png" />
+    <Content Include="images\Java-App-Development\Screenshot_12.png" />
+    <Content Include="images\Java-App-Development\Screenshot_2.png" />
+    <Content Include="images\Java-App-Development\Screenshot_3.png" />
+    <Content Include="images\Java-App-Development\Screenshot_4.png" />
+    <Content Include="images\Java-App-Development\Screenshot_5.png" />
+    <Content Include="images\Java-App-Development\Screenshot_6.png" />
+    <Content Include="images\java-logo.png" />
+    <Content Include="images\NET-Framework\asp.net.png" />
+    <Content Include="images\NET-Framework\asp1.1.png" />
+    <Content Include="images\NET-Framework\asp1.2.png" />
+    <Content Include="images\NET-Framework\asp1.3.jpg" />
+    <Content Include="images\NET-Framework\asp2.1.png" />
+    <Content Include="images\NET-Framework\asp2.2.png" />
+    <Content Include="images\NET-Framework\asp2.3.png" />
+    <Content Include="images\NET-Framework\asp2.4.png" />
+    <Content Include="images\NET-Framework\asp3.1.png" />
+    <Content Include="images\NET-Framework\asp3.2.png" />
+    <Content Include="images\NET-Framework\asp3.4.png" />
+    <Content Include="images\NET-Framework\asp3.5.png" />
+    <Content Include="images\NET-Framework\asp4.1.png" />
+    <Content Include="images\NET-Framework\asp4.2.png" />
+    <Content Include="images\NET-Framework\asp4.3.png" />
+    <Content Include="images\NET-Framework\asp5.1.png" />
+    <Content Include="images\NET-Framework\asp5.2.png" />
+    <Content Include="images\NET-Framework\asp5.3.png" />
+    <Content Include="images\NET-Framework\asp5.4.png" />
+    <Content Include="images\NET-Framework\asp5.5.png" />
+    <Content Include="images\NET-Framework\asp6.1.png" />
+    <Content Include="images\NET-Framework\asp6.2.png" />
+    <Content Include="images\NET-Framework\asp6.3.png" />
+    <Content Include="images\NET-Framework\asp6.4.png" />
+    <Content Include="images\NET-Framework\asp7.1.png" />
+    <Content Include="images\NET-Framework\asp7.2.png" />
+    <Content Include="images\NET-Framework\asp7.3.png" />
+    <Content Include="images\NET-Framework\asp7.4.png" />
+    <Content Include="images\NET-Framework\asp8.1.jpg" />
+    <Content Include="images\NET-Framework\asp8.2.png" />
+    <Content Include="images\NET-Framework\asp8.3.png" />
+    <Content Include="images\NET-Framework\NET1.png" />
+    <Content Include="images\PageSpeed.png" />
+    <Content Include="images\Python\Dictionary.png" />
+    <Content Include="images\Python\Python.jpg" />
+    <Content Include="images\Screenshot_1.png" />
+    <Content Include="images\Screenshot_2.png" />
+    <Content Include="images\Sidebar\appletv.jpg" />
+    <Content Include="images\Sidebar\css.jpg" />
+    <Content Include="images\Sidebar\css3.jpg" />
+    <Content Include="images\Sidebar\github.png" />
+    <Content Include="images\Sidebar\googletrends.jpg" />
+    <Content Include="images\Sidebar\instagram.jpg" />
+    <Content Include="images\Sidebar\ios.jpg" />
+    <Content Include="images\Sidebar\java.png" />
+    <Content Include="images\Sidebar\NETfinal1.jpg" />
+    <Content Include="images\Sidebar\oops.png" />
+    <Content Include="images\Sidebar\PageSpeed.png" />
+    <Content Include="images\Sidebar\pinchworm.jpg" />
+    <Content Include="images\Sidebar\pyth.jpg" />
+    <Content Include="images\Sidebar\rapchat.png" />
+    <Content Include="images\Sidebar\reddit.jpg" />
+    <Content Include="images\Sidebar\snapchat.jpg" />
+    <Content Include="images\Sidebar\sql1.jpg" />
+    <Content Include="images\Sidebar\sql2.png" />
+    <Content Include="images\Sidebar\swift.png" />
+    <Content Include="images\Sidebar\virtualbox.jpg" />
+    <Content Include="images\Sidebar\windows.png" />
+    <Content Include="images\Sidebar\xBoox.jpg" />
+    <Content Include="images\SQL\dbms2.png" />
+    <Content Include="images\SQL\dbms3.png" />
+    <Content Include="images\SQL\dbms4.png" />
+    <Content Include="images\SQL\dbms5.png" />
+    <Content Include="images\SQL\dbms6.png" />
+    <Content Include="images\SQL\dbms7.png" />
+    <Content Include="images\SQL\intro1.jpg" />
+    <Content Include="images\SQL\sql.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_1.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_10.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_11.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_12.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_13.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_14.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_15.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_16.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_17.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_2.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_3.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_4.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_5.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_6.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_7.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_8.png" />
+    <Content Include="images\Swift-App-Development\Screenshot_9.png" />
+    <Content Include="images\Swift-App-Development\swift.jpg" />
+    <Content Include="images\Swift-App-Development\swift1.png" />
+    <Content Include="images\Swift-App-Development\Swift2.png" />
+    <Content Include="images\Swift-App-Development\swift3.png" />
+    <Content Include="images\Swift-App-Development\swift4.png" />
+    <Content Include="images\Swift-App-Development\swift5.png" />
+    <Content Include="images\Swift-App-Development\swift6.png" />
+    <Content Include="images\Swift-App-Development\swift7.png" />
+    <Content Include="images\Swift-App-Development\swift8.png" />
+    <Content Include="images\Swift-App-Development\swiftm1.png" />
+    <Content Include="images\Swift-App-Development\swiftm2.png" />
+    <Content Include="images\Swift-App-Development\swiftm3.png" />
+    <Content Include="images\Swift-App-Development\swiftm4.png" />
+    <Content Include="images\Swift-App-Development\swiftm5.png" />
+    <Content Include="images\Swift-App-Development\swiftm6.png" />
+    <Content Include="images\Swift-App-Development\swiftm7.png" />
+    <Content Include="images\Technology\1st generation appletv.jpg" />
+    <Content Include="images\Technology\2nd generationappletv.jpg" />
+    <Content Include="images\Technology\3rd generation apple tv.jpg" />
+    <Content Include="images\Technology\4th generation appletv.jpg" />
+    <Content Include="images\Technology\appleTV.png" />
+    <Content Include="images\Technology\BLE-working.jpg" />
+    <Content Include="images\Technology\checkin-foursquare.png" />
+    <Content Include="images\Technology\download-foursquare.png" />
+    <Content Include="images\Technology\foursquare.png" />
+    <Content Include="images\Technology\Github\git.png" />
+    <Content Include="images\Technology\Github\github-logos-278px.png" />
+    <Content Include="images\Technology\Github\Screenshot_10.png" />
+    <Content Include="images\Technology\Github\Screenshot_11.png" />
+    <Content Include="images\Technology\Github\Screenshot_12.png" />
+    <Content Include="images\Technology\Github\Screenshot_13.png" />
+    <Content Include="images\Technology\Github\Screenshot_2.png" />
+    <Content Include="images\Technology\Github\Screenshot_3.png" />
+    <Content Include="images\Technology\Github\Screenshot_4.png" />
+    <Content Include="images\Technology\Github\Screenshot_5.png" />
+    <Content Include="images\Technology\Github\Screenshot_6.png" />
+    <Content Include="images\Technology\Github\Screenshot_7.png" />
+    <Content Include="images\Technology\Github\Screenshot_8.png" />
+    <Content Include="images\Technology\Github\Screenshot_9.png" />
+    <Content Include="images\Technology\google trends.png" />
+    <Content Include="images\Technology\google-pagespeed-tool.jpg" />
+    <Content Include="images\Technology\iBeacon.png" />
+    <Content Include="images\Technology\install-foursquare.png" />
+    <Content Include="images\Technology\interestovertime.png" />
+    <Content Include="images\Technology\original-Xbox.png" />
+    <Content Include="images\Technology\pageinsideerror.png" />
+    <Content Include="images\Technology\pageinsideformobilewebsite.png" />
+    <Content Include="images\Technology\pageinsidetool.png" />
+    <Content Include="images\Technology\pageinsidewebsite.png" />
+    <Content Include="images\Technology\pagespeederrors.png" />
+    <Content Include="images\Technology\pinchworm.png" />
+    <Content Include="images\Technology\pinchworm2.png" />
+    <Content Include="images\Technology\pinchwormshop.png" />
+    <Content Include="images\Technology\Powershell\Include-invocation-header-.png" />
+    <Content Include="images\Technology\Powershell\NoClobber.png" />
+    <Content Include="images\Technology\Powershell\PowerShell %281%29.png" />
+    <Content Include="images\Technology\Powershell\Powershell-Example.png" />
+    <Content Include="images\Technology\Powershell\powershell-output.png" />
+    <Content Include="images\Technology\Powershell\Powershell-pipeline-By-value.png" />
+    <Content Include="images\Technology\Powershell\powershell-Save-File.png" />
+    <Content Include="images\Technology\Powershell\powershell-Stop-Transcript.png" />
+    <Content Include="images\Technology\Powershell\powershell-supported-Profile.png" />
+    <Content Include="images\Technology\Powershell\powershell-transcript-path-.png" />
+    <Content Include="images\Technology\Powershell\powershell-Two-Command.png" />
+    <Content Include="images\Technology\Powershell\screenshot131.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_10.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_11.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_12.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_13.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_14.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_15.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_151.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_16.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_161.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_17.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_171.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_4.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_5.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_6.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_7.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_8.png" />
+    <Content Include="images\Technology\Powershell\Screenshot_9.png" />
+    <Content Include="images\Technology\Powershell\Syntax-Start-Tanscript.png" />
+    <Content Include="images\Technology\Powershell\Text-File-Transcript.png" />
+    <Content Include="images\Technology\Powershell\Transcript-Output.png" />
+    <Content Include="images\Technology\Powershell\Transcript-Started.png" />
+    <Content Include="images\Technology\Rapchat.jpg" />
+    <Content Include="images\Technology\reddit.png" />
+    <Content Include="images\Technology\regional-interest.png" />
+    <Content Include="images\Technology\relatedsearch.png" />
+    <Content Include="images\Technology\tech1.png" />
+    <Content Include="images\Technology\tech2.png" />
+    <Content Include="images\Technology\tech3.png" />
+    <Content Include="images\Technology\Tip-To-Friend-on-Foursquare.png" />
+    <Content Include="images\Technology\use-google-trends.png" />
+    <Content Include="images\Technology\virtualbox.png" />
+    <Content Include="images\Technology\Xbox-360.jpg" />
+    <Content Include="images\Technology\Xbox-One.png" />
+    <Content Include="images\Technology\xbox.jpg" />
+    <Content Include="images\triplicate.jpg" />
+    <Content Include="images\Windows-App-Development\blog1.1.png" />
+    <Content Include="images\Windows-App-Development\blog1.2.png" />
+    <Content Include="images\Windows-App-Development\blog1.3.png" />
+    <Content Include="images\Windows-App-Development\blog1.4.png" />
+    <Content Include="images\Windows-App-Development\blog1.5.png" />
+    <Content Include="images\Windows-App-Development\blog2.1.png" />
+    <Content Include="images\Windows-App-Development\blog2.2.png" />
+    <Content Include="images\Windows-App-Development\blog3.1.jpg" />
+    <Content Include="images\Windows-App-Development\blog3.2.png" />
+    <Content Include="images\Windows-App-Development\blog3.3.png" />
+    <Content Include="images\Windows-App-Development\blog5.1.png" />
+    <Content Include="images\Windows-App-Development\blog5.2.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_15.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_16.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_17.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_18.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_19.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_20.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_21.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_22.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_23.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_24.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_25.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_26.png" />
+    <Content Include="images\Windows-App-Development\Screenshot_27.png" />
+    <Content Include="images\Windows-App-Development\windows1.png" />
+    <Content Include="images\Windows-App-Development\windows10.1.png" />
+    <Content Include="images\Windows-App-Development\windows10.2.png" />
+    <Content Include="images\Windows-App-Development\windows10.3.png" />
+    <Content Include="images\Windows-App-Development\windows10.4.png" />
+    <Content Include="images\Windows-App-Development\windows10.5.png" />
+    <Content Include="images\Windows-App-Development\windows10.6.png" />
+    <Content Include="images\Windows-App-Development\windows10.7.png" />
+    <Content Include="images\Windows-App-Development\windows10.8.png" />
+    <Content Include="images\Windows-App-Development\windows10.9.png" />
+    <Content Include="images\Windows-App-Development\windows11.1.png" />
+    <Content Include="images\Windows-App-Development\windows11.2.png" />
+    <Content Include="images\Windows-App-Development\windows11.3.png" />
+    <Content Include="images\Windows-App-Development\windows11.4.png" />
+    <Content Include="images\Windows-App-Development\windows11.5.png" />
+    <Content Include="images\Windows-App-Development\windows11.6.png" />
+    <Content Include="images\Windows-App-Development\windows11.7.png" />
+    <Content Include="images\Windows-App-Development\windows11.8.png" />
+    <Content Include="images\Windows-App-Development\windows11.png" />
+    <Content Include="images\Windows-App-Development\windows12.1.png" />
+    <Content Include="images\Windows-App-Development\windows12.10.png" />
+    <Content Include="images\Windows-App-Development\windows12.11.png" />
+    <Content Include="images\Windows-App-Development\windows12.12.png" />
+    <Content Include="images\Windows-App-Development\windows12.13.png" />
+    <Content Include="images\Windows-App-Development\windows12.14.png" />
+    <Content Include="images\Windows-App-Development\windows12.15.png" />
+    <Content Include="images\Windows-App-Development\windows12.16.png" />
+    <Content Include="images\Windows-App-Development\windows12.17.png" />
+    <Content Include="images\Windows-App-Development\windows12.18.png" />
+    <Content Include="images\Windows-App-Development\windows12.19.png" />
+    <Content Include="images\Windows-App-Development\windows12.2.png" />
+    <Content Include="images\Windows-App-Development\windows12.20.png" />
+    <Content Include="images\Windows-App-Development\windows12.21.png" />
+    <Content Include="images\Windows-App-Development\windows12.22.png" />
+    <Content Include="images\Windows-App-Development\windows12.3.png" />
+    <Content Include="images\Windows-App-Development\windows12.4.png" />
+    <Content Include="images\Windows-App-Development\windows12.5.png" />
+    <Content Include="images\Windows-App-Development\windows12.6.png" />
+    <Content Include="images\Windows-App-Development\windows12.7.png" />
+    <Content Include="images\Windows-App-Development\windows12.8.png" />
+    <Content Include="images\Windows-App-Development\windows12.9.png" />
+    <Content Include="images\Windows-App-Development\windows21.jpg" />
+    <Content Include="Index.html" />
+    <Content Include="iOS.html" />
+    <Content Include="Java.html" />
+    <Content Include="Login.html" />
+    <Content Include="packages.config" />
+    <Content Include="SQL.html" />
+    <Content Include="Syntax Highlighter\Scripts\shAutoloader.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushAppleScript.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushAS3.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushBash.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushColdFusion.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushCpp.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushCSharp.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushCss.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushDelphi.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushDiff.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushErlang.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushGroovy.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushJava.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushJavaFX.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushJScript.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushPerl.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushPhp.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushPlain.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushPowerShell.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushPython.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushRuby.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushSass.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushScala.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushSql.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushVb.js" />
+    <Content Include="Syntax Highlighter\Scripts\shBrushXml.js" />
+    <Content Include="Syntax Highlighter\Scripts\shCore.js" />
+    <Content Include="Syntax Highlighter\Scripts\shLegacy.js" />
+    <Content Include="Syntax Highlighter\src\shAutoloader.js" />
+    <Content Include="Syntax Highlighter\src\shCore.js" />
+    <Content Include="Syntax Highlighter\src\shLegacy.js" />
+    <Content Include="Syntax Highlighter\Styles\shCore.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreDefault.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreDjango.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreEclipse.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreEmacs.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreFadeToGrey.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreMDUltra.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreMidnight.css" />
+    <Content Include="Syntax Highlighter\Styles\shCoreRDark.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeDefault.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeDjango.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeEclipse.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeEmacs.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeFadeToGrey.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeMDUltra.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeMidnight.css" />
+    <Content Include="Syntax Highlighter\Styles\shThemeRDark.css" />
+    <Content Include="Windows.html" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Python.html" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Swift.html" />
+    <Content Include="Technology.html" />
+    <Content Include="Computer-Programming\Video-Tutorials\ASP.NET-Video-Tutorials.html" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Syntax Highlighter\Compass\config.rb" />
+    <Content Include="Syntax Highlighter\Compass\shCore.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreDefault.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreDjango.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreEclipse.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreEmacs.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreFadeToGrey.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreMDUltra.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreMidnight.scss" />
+    <Content Include="Syntax Highlighter\Compass\shCoreRDark.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeDefault.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeDjango.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeEclipse.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeEmacs.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeFadeToGrey.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeMDUltra.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeMidnight.scss" />
+    <Content Include="Syntax Highlighter\Compass\shThemeRDark.scss" />
+    <Content Include="Syntax Highlighter\Compass\_theme_template.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Syntax Highlighter\tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54625</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54625/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
